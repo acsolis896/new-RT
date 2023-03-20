@@ -9,7 +9,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "*",
-    "vite": "latest"
+    "vite": "latest",
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0"
   },
   "scripts": {
     "start": "vite",
@@ -19,7 +24,7 @@
   },
   "babel": {
     "presets": [
-        "react-app"
+      "@babel/preset-env", "@babel/preset-react"
     ]
   }
 }
