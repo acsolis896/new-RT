@@ -16,7 +16,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 85%;
 }
 
 .start-container {
@@ -47,6 +47,10 @@ p {
     justify-content: space-around;
     align-items: center;
     
+}
+
+section {
+    height: 10rem;
 }
 
 .answer-choices {
