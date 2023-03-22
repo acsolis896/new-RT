@@ -8,17 +8,18 @@ body {
     background-image: url("./blobs.png"), url("./blobs-blue.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right top, bottom left;
-    
-    
 }
 
 main {
     margin: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .start-container {
     text-align: center;
-    margin: 120px auto;
+    margin: auto;
 }
 
 .question-title {
