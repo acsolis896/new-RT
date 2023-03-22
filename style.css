@@ -11,10 +11,11 @@ body {
 }
 
 main {
-    margin: 40px 75px;
+    margin: 10em auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .start-container {
@@ -22,9 +23,20 @@ main {
     margin: auto;
 }
 
+.web-title {
+    font-size: 4em;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
 .question-title {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 19px;
+    margin: 0.8rem;
     color: #293264;
 }
 
@@ -54,14 +66,14 @@ main {
 
 .button {
     width: 120px;
-    height: 35px;
+    height: 3rem;
     background: #4D5B9E;
     border-radius: 10px;
     border: none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 10.24px;
+    font-size: 1em;
     line-height: 12px;
     text-align: center;
     color: #F5F7FB;

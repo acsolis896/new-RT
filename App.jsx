@@ -121,7 +121,7 @@ export default function App() {
         <main>
             {!start ? 
             <div className="start-container">
-                <h1>Quizzical</h1>
+                <h1 className="web-title">Quizzical</h1>
                 <p>Test Your Film Knowledge</p>
                 <button onClick={startQuiz} className="button">Start Quiz</button>
             </div> 
