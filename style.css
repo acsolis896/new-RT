@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    margin: 10em auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
