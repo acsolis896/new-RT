@@ -98,6 +98,7 @@ section {
 .profile-info input {
     background-color: transparent;
     display: block;
+    border: none;
 }
 
 .profile-info h1 {
@@ -106,4 +107,5 @@ section {
 
 .input-div {
     display: flex;
+    border-bottom: 1px solid white;
 }
