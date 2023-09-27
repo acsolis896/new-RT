@@ -46,7 +46,7 @@ function ProfileInfo() {
 
     <div class="input-div">
         <input
-            type="text"
+            type="file"
             placeholder="Photo URL"
             value={photoURL}
             onChange={handlePhotoURLChange}
