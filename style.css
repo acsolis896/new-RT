@@ -95,10 +95,14 @@ section {
 
 /* PROFILE INFO COMPONENT CSS */
 
+.profile-info {
+    display: flex;
+}
+
 .profile-info input {
     background-color: transparent;
 }
 
-.profile-info {
-    display: flex;
+.profile-info h1 {
+    text-align: center;
 }
