@@ -95,12 +95,9 @@ section {
 
 /* PROFILE INFO COMPONENT CSS */
 
-.profile-info {
-    display: flex;
-}
-
 .profile-info input {
     background-color: transparent;
+    display: block;
 }
 
 .profile-info h1 {
