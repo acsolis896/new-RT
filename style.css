@@ -98,3 +98,7 @@ section {
 .profile-info input {
     background-color: transparent;
 }
+
+.profile-info {
+    display: flex;
+}

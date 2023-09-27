@@ -23,12 +23,16 @@ function ProfileInfo() {
   return (
     <div class="profile-info">
       <h1>Your profile</h1>
-      <input
-        type="text"
-        placeholder="Display Name"
-        value={displayName}
-        onChange={handleDisplayNameChange}
-      />
+      <div class="enter-display-name">
+        <p>pencil</p>
+        <input
+            type="text"
+            placeholder="Display Name"
+            value={displayName}
+            onChange={handleDisplayNameChange}
+        />
+      </div>
+
       <input
         type="text"
         placeholder="Location"
