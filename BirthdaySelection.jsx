@@ -15,6 +15,7 @@ function BirthdaySelection() {
             <h2>Please provide your date of birth 🎂</h2>
             <p>Date of birth will allow us to tailor age-appropriate content and will not be shared with any third parties.</p>
             <input
+            class="bday-input"
             type="date"
             value={birthday}
             onChange={handleBirthdayChange}
