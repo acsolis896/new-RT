@@ -3,15 +3,15 @@ import './style.css';
 
 function ProfileInfo() {
   const [displayName, setDisplayName] = useState('');
-  const [location, setLocation] = useState('');
+  const [birthday, setBirthday] = useState('');
   const [photoURL, setPhotoURL] = useState('');
 
   const handleDisplayNameChange = (e) => {
     setDisplayName(e.target.value);
   };
 
-  const handleLocationChange = (e) => {
-    setLocation(e.target.value);
+  const handleBirthdayChange = (e) => {
+    setBirthday(e.target.value);
   };
 
   const handlePhotoURLChange = (e) => {
@@ -32,19 +32,26 @@ function ProfileInfo() {
             onChange={handleDisplayNameChange}
         />
       </div>
+      <p>Your display name will be visible to other users.</p>
 
-      <input
-        type="text"
-        placeholder="Location"
-        value={location}
-        onChange={handleLocationChange}
-      />
-      <input
-        type="text"
-        placeholder="Photo URL"
-        value={photoURL}
-        onChange={handlePhotoURLChange}
-      />
+    <div class="input-div">
+        <input
+            type="text"
+            placeholder="Your birthday"
+            value={birthday}
+            onChange={handleBirthdayChange}
+        />
+    </div>
+    <p>Your birthday will be used to tailor our content for you. It wont be shared with any third parties. </p>
+
+    <div class="input-div">
+        <input
+            type="text"
+            placeholder="Photo URL"
+            value={photoURL}
+            onChange={handlePhotoURLChange}
+        />
+    </div>
     </div>
   );
 }
