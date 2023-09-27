@@ -103,3 +103,7 @@ section {
 .profile-info h1 {
     text-align: center;
 }
+
+.input-div {
+    display: flex;
+}

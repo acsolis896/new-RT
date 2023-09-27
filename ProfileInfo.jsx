@@ -23,7 +23,7 @@ function ProfileInfo() {
   return (
     <div class="profile-info">
       <h1>Your profile</h1>
-      <div class="enter-display-name">
+      <div class="input-div">
         <p>pencil</p>
         <input
             type="text"
