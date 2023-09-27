@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <main className="App">
       <h1>Reel Talk</h1>
       <p>Testing</p>
 
@@ -35,7 +35,7 @@ function App() {
       {step === 4 && (
         <button>Finish</button>
       )}
-    </div>
+    </main>
   );
 }
 
