@@ -31,14 +31,24 @@ function ProfileInfo() {
             value={photoURL}
             onChange={handlePhotoURLChange}
           />
-        <p>pencil</p>
-        <input
-            type="text"
-            placeholder="Display Name"
-            value={displayName}
-            onChange={handleDisplayNameChange}
-        />
+
+            <div>
+                <input
+                    type="text"
+                    placeholder="Display Name"
+                    value={displayName}
+                    onChange={handleDisplayNameChange}
+                />
+                <input
+                    type="text"
+                    placeholder="Location"
+                    value={location}
+                    onChange={handleLocationChange}
+                />
+            </div>
+       
       </div>
+        <textarea placeholder="Describe yourself here..."></textarea>
 
     </div>
   );
