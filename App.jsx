@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 import ProfileInfo from './ProfileInfo';
 // import BirthdaySelection from './BirthdaySelection';
-// import GenreSelection from './GenreSelection';
+import GenreSelection from './GenreSelection';
 // import MovieSelection from './MovieSelection';
 
 function App() {
@@ -20,9 +20,9 @@ function App() {
     <main className="App">
 
       {step === 1 && <ProfileInfo />}
-      {/* {step === 2 && <BirthdaySelection />}
+      {step === 2 && <BirthdaySelection />}
       {step === 3 && <GenreSelection />}
-      {step === 4 && <MovieSelection />}  */}
+      {step === 4 && <MovieSelection />} 
       
       {/* Navigation buttons */}
       {step > 1 && (
