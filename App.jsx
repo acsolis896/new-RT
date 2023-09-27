@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './style.css';
 import ProfileInfo from './ProfileInfo';
-// import BirthdaySelection from './BirthdaySelection';
+import BirthdaySelection from './BirthdaySelection';
 import GenreSelection from './GenreSelection';
-// import MovieSelection from './MovieSelection';
+import MovieSelection from './MovieSelection';
 
 function App() {
   const [step, setStep] = useState(1); // Use a state variable to track the current onboarding step
