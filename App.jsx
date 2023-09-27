@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 import ProfileInfo from './ProfileInfo';
 // import BirthdaySelection from './BirthdaySelection';
 // import GenreSelection from './GenreSelection';
@@ -17,8 +18,6 @@ function App() {
 
   return (
     <main className="App">
-      <h1>Reel Talk</h1>
-      <p>Testing</p>
 
       {step === 1 && <ProfileInfo />}
       {/* {step === 2 && <BirthdaySelection />}

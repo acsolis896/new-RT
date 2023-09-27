@@ -20,8 +20,8 @@ function ProfileInfo() {
   // Integrate Firebase to save this information later
 
   return (
-    <div>
-      <h2>Display Name, Location & Photo</h2>
+    <div class="profile-info">
+      <h1>Your profile</h1>
       <input
         type="text"
         placeholder="Display Name"
