@@ -4,10 +4,7 @@
 
 body {
     font-family: 'Karla', sans-serif;
-    background: #F5F7FB;
-    background-image: url("./blobs.png"), url("./blobs-blue.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right top, bottom left;
+    background: #222222;
 }
 
 main {
