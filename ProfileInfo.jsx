@@ -48,7 +48,7 @@ function ProfileInfo() {
             </div>
        
       </div>
-        <textarea placeholder="Describe yourself here..."></textarea>
+        <textarea class="dark-grey-bg" placeholder="Describe yourself here..."></textarea>
 
     </div>
   );

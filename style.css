@@ -8,6 +8,10 @@ body {
     color: white;
 }
 
+.dark-grey-bg {
+    background-color: #2D2D2E;
+}
+
 /* PROGRESS BAR */
 
 .progress-bar {
@@ -151,6 +155,8 @@ section {
 }
 
 /* BIRTHDAY SELECTION COMPONENT */
+
+
 
 .bday-movies-div {
     background-color: #2D2D2E;
