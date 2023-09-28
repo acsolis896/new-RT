@@ -16,6 +16,11 @@ input[type="file"] {
     display: none;
 }
 
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
 /* PROGRESS BAR */
 
 .progress-bar {
