@@ -32,33 +32,35 @@ function ProfileInfo() {
     <div class="profile-info">
       <h1>Customize your profile</h1>
       <p>Personalizing your profile will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
-      <div class="input-div">
-            <div className="profile-picture-container" onClick={() => document.getElementById('fileInput').click()}>
-            {image && <img src={image} alt="profile" />}
-            <i className="fas fa-plus"></i>
-            <input 
-                type="file" 
-                id="fileInput" 
-                hidden 
-                onChange={handleImageChange}
-            />
-            </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+        <div class="input-div">
+                <div className="profile-picture-container" onClick={() => document.getElementById('fileInput').click()}>
+                {image && <img src={image} alt="profile" />}
+                <i className="fas fa-plus"></i>
+                <input 
+                    type="file" 
+                    id="fileInput" 
+                    hidden 
+                    onChange={handleImageChange}
+                />
+                </div>
 
-            <div>
-                <input
-                    type="text"
-                    placeholder="Display Name"
-                    value={displayName}
-                    onChange={handleDisplayNameChange}
-                />
-                <input
-                    type="text"
-                    placeholder="📍 Unknown location"
-                    value={location}
-                    onChange={handleLocationChange}
-                />
-            </div>
-       
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Display Name"
+                        value={displayName}
+                        onChange={handleDisplayNameChange}
+                    />
+                    <input
+                        type="text"
+                        placeholder="📍 Unknown location"
+                        value={location}
+                        onChange={handleLocationChange}
+                    />
+                </div>
+        
+        </div>
       </div>
         <textarea 
             class="dark-grey-bg" 
