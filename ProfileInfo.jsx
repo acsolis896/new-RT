@@ -61,11 +61,11 @@ function ProfileInfo() {
                 </div>
         
         </div>
-      </div>
         <textarea 
             class="dark-grey-bg" 
             placeholder="I’m a huge horror movie buff that favors MCU over DC any day. I also love Crime shows and my favorite hero is Spiderman …">
         </textarea>
+     </div>
 
     </div>
   );
