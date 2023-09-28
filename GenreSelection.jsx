@@ -28,7 +28,7 @@ function GenreSelection() {
 
   return (
     <div>
-      <h2>Genre Selection</h2>
+      <h2>Select your top 3 genres for movies and TV</h2>
       <div className="genres-grid">
             {displayedGenres.map(genre => (
                 <div class="genre-div">
