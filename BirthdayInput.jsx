@@ -14,7 +14,7 @@ function BirthdayInput() {
   return (
     <form onSubmit={handleSubmit}>
         <div class="input-containers">
-            <div>
+            <div class="inputs-div">
                 <label for="month">Month</label>
                 <input 
                 class="bday-input dark-grey-bg"

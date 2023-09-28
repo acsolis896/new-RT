@@ -227,8 +227,11 @@ textarea {
 
 .input-containers {
     display: flex;
-    flex-direction: column;
     gap: 20px;
+}
+
+.inputs-div {
+    display: flex;
 }
 
 .bday-input {
