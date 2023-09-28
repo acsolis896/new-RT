@@ -241,6 +241,7 @@ textarea {
 .bday-input {
     width: 63px;
     height: 42px;
+    text-align: center;
 }
 
 /* BIRTHDAY SELECTION COMPONENT */
