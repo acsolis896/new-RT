@@ -15,7 +15,7 @@ body {
     justify-content: start;
     align-items: center;
     padding: 10px 0;
-    background-color: #f5f5f5; /* optional background color */
+    background-color: transparent; /* optional background color */
     position: relative;
 }
 
@@ -26,7 +26,7 @@ body {
     left: 0;
     right: 0;
     height: 3px; /* adjust the height as needed */
-    background-color: #ddd; /* color of the line */
+    background-color: #6D6D6D; /* color of the line */
     z-index: 1; /* make sure it's behind the dots */
 }
 
@@ -35,13 +35,13 @@ body {
     height: 20px;
     border-radius: 50%;
     margin-right: 5px;
-    background-color: #ddd;
+    background-color: #6D6D6D;
     position: relative; /* make it on top of the line */
     z-index: 2; /* ensure dot is above the line */
 }
 
 .dot.completed {
-    background-color: #4CAF50;
+    background-color: #FFA724;
 }
 
 /* MAIN COMPONENT */
