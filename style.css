@@ -233,6 +233,7 @@ textarea {
 
 .bday-container {
     display: flex;
+    gap: 20px;
 }
 
 .bday-info {
