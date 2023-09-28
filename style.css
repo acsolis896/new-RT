@@ -16,6 +16,16 @@ input[type="file"] {
     display: none;
 }
 
+button {
+    width: 256px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #6D6D6D;
+    background-color: transparent;
+    color: white;
+}
+
 
 /* PROGRESS BAR */
 
