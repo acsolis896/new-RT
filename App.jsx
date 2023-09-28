@@ -24,7 +24,7 @@ function App() {
 
       {step === 1 && <ProfileInfo />}
       {step === 2 && <BirthdaySelection />}
-      {/* {step === 3 && <GenreSelection />} */}
+      {step === 3 && <GenreSelection />}
       {step === 4 && <MovieSelection />} 
       
       {/* Navigation buttons */}

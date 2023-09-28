@@ -10,7 +10,7 @@ const ALL_GENRES = [
     'Talk-Show 🗣', 'Short ⏳'
 ];
 
-function GenreSelectionPage() {
+function GenreSelection() {
     const [selectedGenres, setSelectedGenres] = useState([]);
     const [showMore, setShowMore] = useState(false);
 

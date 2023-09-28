@@ -209,7 +209,7 @@ section {
 
 /* GENRE SELECTION COMPONENT */
 
-/* .genres-grid {
+.genres-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -221,4 +221,4 @@ section {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-} */
+}
