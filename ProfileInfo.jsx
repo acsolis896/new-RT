@@ -53,14 +53,18 @@ function ProfileInfo() {
                 />
                 <input
                     type="text"
-                    placeholder="Location"
+                    placeholder="📍 Unknown location"
                     value={location}
                     onChange={handleLocationChange}
                 />
             </div>
        
       </div>
-        <textarea class="dark-grey-bg" placeholder="Describe yourself here..."></textarea>
+        <textarea 
+            class="dark-grey-bg" 
+            placeholder="I’m a huge horror movie buff that favors MCU over DC any day. 
+            I also love Crime shows and my favorite hero is Spiderman …">
+        </textarea>
 
     </div>
   );

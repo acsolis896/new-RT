@@ -148,6 +148,10 @@ section {
     justify-content: center;
 }
 
+textarea {
+    resize: none;
+}
+
 .profile-info input {
     background-color: transparent;
     display: block;
