@@ -20,10 +20,10 @@ function BirthdaySelection() {
         <div class="bday-movies-div">
             <p>We love our birthday movies 🎉 </p>
             <div class="bday-movies-posters">
-                <img src=".images/princess-diaries.png" alt="Princess Diaries movie poster"></img>
-                <img src=".images/13-going-on-30.png" alt="13 Going On 30 movie poster"></img>
-                <img src=".images/thisis-40.png" alt="This Is 40 movie poster"></img>
-                <img src=".images/17-again.png" alt="17 Again movie poster"></img>
+                <img src="images/princess-diaries.png" alt="Princess Diaries movie poster"></img>
+                <img src="images/13-going-on-30.png" alt="13 Going On 30 movie poster"></img>
+                <img src="images/thisis-40.png" alt="This Is 40 movie poster"></img>
+                <img src="images/17-again.png" alt="17 Again movie poster"></img>
             </div>
         </div>
     </div>
