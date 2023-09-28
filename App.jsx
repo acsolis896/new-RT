@@ -28,8 +28,9 @@ function App() {
       {step === 4 && <MovieSelection />} 
       
       {/* Navigation buttons */}
+    <div style={{ display: 'flex', gap: '10px' }}>
       {step > 1 && (
-        <button onClick={prevStep}>Previous</button>
+        <button onClick={prevStep}>Back</button>
       )}
       {step < 4 && (
         <button onClick={nextStep}>Next</button>
@@ -37,6 +38,8 @@ function App() {
       {step === 4 && (
         <button>Finish</button>
       )}
+    </div>
+
     </main>
   );
 }
