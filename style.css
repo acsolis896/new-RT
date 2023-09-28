@@ -232,6 +232,7 @@ textarea {
 
 .inputs-div {
     display: flex;
+    flex-direction: column;
 }
 
 .bday-input {
