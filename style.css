@@ -243,6 +243,8 @@ textarea {
 .bday-movies-div {
     background-color: #2D2D2E;
     padding: 20px 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* GENRE SELECTION COMPONENT */
