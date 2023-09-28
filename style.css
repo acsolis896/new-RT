@@ -156,7 +156,10 @@ section {
 
 /* BIRTHDAY SELECTION COMPONENT */
 
-
+.bday-input {
+    border: none;
+    border-radius: 50px;
+}
 
 .bday-movies-div {
     background-color: #2D2D2E;

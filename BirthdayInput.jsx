@@ -16,7 +16,7 @@ function BirthdayInput() {
       <label>
         Month:
         <input 
-          class="dark-grey-bg"
+          class="bday-input dark-grey-bg"
           type="text"
           placeholder="MM" 
           value={month} 
@@ -29,7 +29,7 @@ function BirthdayInput() {
       <label>
         Day:
         <input 
-          class="dark-grey-bg"
+          class="bday-input dark-grey-bg"
           type="text"
           placeholder="DD"  
           value={day} 
@@ -42,7 +42,7 @@ function BirthdayInput() {
       <label>
         Year:
         <input 
-          class="dark-grey-bg"
+          class="bday-input dark-grey-bg"
           type="text" 
           placeholder="YYYY" 
           value={year} 
