@@ -229,6 +229,11 @@ textarea {
     display: flex;
 }
 
+.bday-input {
+    width: 63px;
+    height: 42px;
+}
+
 /* BIRTHDAY SELECTION COMPONENT */
 
 .bday-container {
