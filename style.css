@@ -258,6 +258,11 @@ textarea {
     text-align: center;
 }
 
+.bday-movies-posters {
+    display: flex;
+    gap: 10px;
+}
+
 .bday-poster {
     width: 105px;
     height: 159px
