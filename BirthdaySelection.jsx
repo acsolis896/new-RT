@@ -11,7 +11,7 @@ function BirthdaySelection() {
   // Integrate Firebase to save the birthday information
 
   return (
-    <div>
+    <div class="bday-container">
         <div class="bday-info">
             <h2>Please provide your date of birth 🎂</h2>
             <p>Date of birth will allow us to tailor age-appropriate content and will not be shared with any third parties.</p>

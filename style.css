@@ -194,6 +194,10 @@ section {
 
 /* BIRTHDAY SELECTION COMPONENT */
 
+.bday-container {
+    display: flex;
+}
+
 .bday-input {
     border: none;
     border-radius: 50px;
