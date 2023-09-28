@@ -4,6 +4,7 @@ import ProfileInfo from './ProfileInfo';
 import BirthdaySelection from './BirthdaySelection';
 import GenreSelection from './GenreSelection';
 import MovieSelection from './MovieSelection';
+import ProgressBar from './ProgressBar';
 
 function App() {
   const [step, setStep] = useState(1); // Use a state variable to track the current onboarding step
@@ -18,6 +19,8 @@ function App() {
 
   return (
     <main className="App">
+        
+        <ProgressBar currentStep={step}/>
 
       {step === 1 && <ProfileInfo />}
       {step === 2 && <BirthdaySelection />}
