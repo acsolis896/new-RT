@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BirthdayInput from './BirthdayInput';
 
 function BirthdaySelection() {
   const [birthday, setBirthday] = useState('');
@@ -14,12 +15,7 @@ function BirthdaySelection() {
         <div class="bday-info">
             <h2>Please provide your date of birth 🎂</h2>
             <p>Date of birth will allow us to tailor age-appropriate content and will not be shared with any third parties.</p>
-            <input
-            class="bday-input"
-            type="date"
-            value={birthday}
-            onChange={handleBirthdayChange}
-            />
+            <BirthdayInput/>
         </div>
         <div class="bday-movies-div">
             <p>We love our birthday movies 🎉 </p>
