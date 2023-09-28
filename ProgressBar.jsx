@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProgressBar.css';
+import './style.css';
 
 const ProgressBar = ({ currentStep, totalSteps = 4 }) => {
     return (
