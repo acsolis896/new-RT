@@ -215,8 +215,8 @@ textarea {
 /* BIRTHDAY SELECTION COMPONENT */
 
 label {
-    display: block;
-    margin-bottom: 8px;
+    display: block;  
+    margin-bottom: 8px; 
 }
 
 .bday-container {

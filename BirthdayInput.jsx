@@ -13,10 +13,10 @@ function BirthdayInput() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Month
+      <label for="month">Month</label>
         <input 
           class="bday-input dark-grey-bg"
+          id="month"
           type="text"
           placeholder="MM" 
           value={month} 
@@ -25,11 +25,10 @@ function BirthdayInput() {
           max="12"
           required
         />
-      </label>
-      <label>
-        Day
+      <label for="day">Day</label>
         <input 
           class="bday-input dark-grey-bg"
+          id="day"
           type="text"
           placeholder="DD"  
           value={day} 
@@ -38,18 +37,16 @@ function BirthdayInput() {
           max="31"
           required
         />
-      </label>
-      <label>
-        Year
+      <label for="year">Year</label>
         <input 
           class="bday-input dark-grey-bg"
+          id="year"
           type="text" 
           placeholder="YYYY" 
           value={year} 
           onChange={(e) => setYear(e.target.value)}
           required
         />
-      </label>
       <button type="submit">Submit</button>
     </form>
   );
