@@ -28,6 +28,8 @@ body {
     height: 3px; /* adjust the height as needed */
     background-color: #6D6D6D; /* color of the line */
     z-index: 1; /* make sure it's behind the dots */
+    width: calc((100% - 20px) - 5px); /* assuming the dot width is 20px and margin-right is 5px */
+    transform: translateY(-50%); /* to vertically center the line */
 }
 
 .dot {
