@@ -16,10 +16,6 @@ input[type="file"] {
     display: none;
 }
 
-p {
-    font-weight: 400;
-    font-size: 10px;
-}
 
 /* PROGRESS BAR */
 
@@ -157,6 +153,14 @@ section {
 .profile-info h1 {
     text-align: center;
 }
+
+.profile-info p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    color: pink;
+}
+
 
 .input-div {
     display: flex;
