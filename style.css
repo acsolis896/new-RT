@@ -145,7 +145,7 @@ section {
 /* PROFILE INFO COMPONENT CSS */
 
 .profile-info {
-    margin: auto;
+    justify-content: center;
 }
 
 .profile-info input {
