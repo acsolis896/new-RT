@@ -12,6 +12,10 @@ body {
     background-color: #2D2D2E;
 }
 
+input[type="file"] {
+    display: none;
+}
+
 /* PROGRESS BAR */
 
 .progress-bar {
