@@ -234,6 +234,7 @@ textarea {
 .inputs-div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .bday-input {
