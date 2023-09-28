@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const ALL_GENRES = [
     'Action 🔫', 'Adventure 🪂', 'Animation 🖍️', 'Biography 📚', 'Comedy 😂', 
     'Crime 🕵️‍♂️', 'Documentary 🎥 ', 'Drama 🎭', 'Family 👪', 'Fantasy 🦄', 
