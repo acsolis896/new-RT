@@ -149,3 +149,9 @@ section {
     display: flex;
     border-bottom: 1px solid white;
 }
+
+/* BIRTHDAY SELECTION COMPONENT */
+
+.bday-movies-div {
+    background-color: #222222;
+}
