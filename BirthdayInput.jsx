@@ -29,7 +29,7 @@ function BirthdayInput() {
                 />
             </div>
 
-            <div>
+            <div class="inputs-div">
                 <label for="day">Day</label>
                 <input 
                 class="bday-input dark-grey-bg"
@@ -44,7 +44,7 @@ function BirthdayInput() {
                 />
             </div>
 
-            <div>
+            <div class="inputs-div">
                 <label for="year">Year</label>
                 <input 
                 class="bday-input dark-grey-bg"
