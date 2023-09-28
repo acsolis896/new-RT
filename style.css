@@ -238,11 +238,12 @@ textarea {
 
 .bday-info {
     text-align: right;
-    font-size: 16px;
 }
 
 .bday-info p {
     font-weight: normal;
+    font-size: 12px;
+
 }
 
 .bday-input {
