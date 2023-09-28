@@ -14,7 +14,7 @@ function BirthdayInput() {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Month:
+        Month
         <input 
           class="bday-input dark-grey-bg"
           type="text"
@@ -27,7 +27,7 @@ function BirthdayInput() {
         />
       </label>
       <label>
-        Day:
+        Day
         <input 
           class="bday-input dark-grey-bg"
           type="text"
@@ -40,7 +40,7 @@ function BirthdayInput() {
         />
       </label>
       <label>
-        Year:
+        Year
         <input 
           class="bday-input dark-grey-bg"
           type="text" 
