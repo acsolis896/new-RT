@@ -31,15 +31,17 @@ function GenreSelection() {
       <h2>Genre Selection</h2>
       <div className="genres-grid">
             {displayedGenres.map(genre => (
+                <div class="genre-div">
                  <label key={genre}>
+                    {genre}
                     <input 
                         type="checkbox" 
                         value={genre} 
                         checked={selectedGenres.includes(genre)} 
                         onChange={() => handleGenreChange(genre)}
                     />
-                    {genre}
                 </label>
+                </div>
             ))}
      </div>
             <button class="show-btn" onClick={() => setShowMore(!showMore)}>
