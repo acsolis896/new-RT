@@ -228,6 +228,7 @@ textarea {
 .input-containers {
     display: flex;
     gap: 20px;
+    justify-content: flex-end;
 }
 
 .inputs-div {
