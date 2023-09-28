@@ -150,6 +150,12 @@ section {
 
 textarea {
     resize: none;
+    width: 339px;
+    height: 118px;
+    padding: 18px, 0px, 12px, 0px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 10px
 }
 
 .profile-info input {
