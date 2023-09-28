@@ -16,7 +16,8 @@ function BirthdayInput() {
       <label>
         Month:
         <input 
-          type="number" 
+          type="text"
+          placeholder="MM" 
           value={month} 
           onChange={(e) => setMonth(e.target.value)}
           min="1"
@@ -27,7 +28,8 @@ function BirthdayInput() {
       <label>
         Day:
         <input 
-          type="number" 
+          type="text"
+          placeholder="DD"  
           value={day} 
           onChange={(e) => setDay(e.target.value)}
           min="1"
@@ -38,7 +40,8 @@ function BirthdayInput() {
       <label>
         Year:
         <input 
-          type="number" 
+          type="text" 
+          placeholder="YYYY" 
           value={year} 
           onChange={(e) => setYear(e.target.value)}
           required
