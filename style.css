@@ -301,3 +301,13 @@ textarea {
     border-radius: 8px;
     gap: 10px
 }
+
+.genre-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.genre-name {
+     margin-right: 10px; /* or any desired spacing between the genre name and checkbox */
+}

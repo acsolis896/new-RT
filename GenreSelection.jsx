@@ -32,8 +32,8 @@ function GenreSelection() {
       <div className="genres-grid">
             {displayedGenres.map(genre => (
                 <div class="genre-div">
-                 <label key={genre}>
-                    {genre}
+                 <label key={genre} class="genre-label">
+                    <span class="genre-name">{genre}</span>
                     <input 
                         type="checkbox" 
                         value={genre} 
