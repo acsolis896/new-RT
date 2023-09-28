@@ -12,7 +12,7 @@ function TvSelection() {
   // Integrate Firebase to save the top 5 movies
 
   return (
-    <div>
+    <div style={{ textAlign: 'center' }}>
       <h2>Select your top 5 TV shows</h2>
       <p>Selecting your top 5 TV-shows will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
       {topTv.map((movie, index) => (
