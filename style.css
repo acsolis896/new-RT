@@ -206,3 +206,19 @@ section {
 .bday-movies-div {
     background-color: #2D2D2E;
 }
+
+/* GENRE SELECTION COMPONENT */
+
+.genres-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.show-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
