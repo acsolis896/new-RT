@@ -9,7 +9,7 @@ function TvSelection() {
     setTopTv(newMovies);
   };
 
-  // Integrate Firebase to save the top 5 movies
+  // Integrate Firebase to save the top 5 tv shows
 
   return (
     <div style={{ textAlign: 'center' }}>

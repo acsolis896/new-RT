@@ -7,8 +7,8 @@ function BirthdayInput() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const date = new Date(year, month - 1, day); // month - 1 because months are 0-indexed in JS Date object
-    console.log(date);  // Handle the date as you wish
+    const date = new Date(year, month - 1, day);
+    console.log(date);  // Will need to save date on Firebase
   }
 
   return (

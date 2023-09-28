@@ -8,8 +8,7 @@ import TvSelection from './TvSelection';
 import ProgressBar from './ProgressBar';
 
 function App() {
-  const [step, setStep] = useState(1); // Use a state variable to track the current onboarding step
-
+  const [step, setStep] = useState(1); 
   const nextStep = () => {
     setStep(step + 1); // Move to the next step
   };

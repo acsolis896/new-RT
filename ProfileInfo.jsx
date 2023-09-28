@@ -4,7 +4,7 @@ import './style.css';
 function ProfileInfo() {
   const [displayName, setDisplayName] = useState('');
   const [location, setLocation] = useState('');
-  const [image, setImage] = useState(null); // store the selected image URL
+  const [image, setImage] = useState(null);
 
 
   const handleDisplayNameChange = (e) => {
