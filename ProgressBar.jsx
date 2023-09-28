@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const ProgressBar = ({ currentStep, totalSteps = 4 }) => {
+const ProgressBar = ({ currentStep, totalSteps = 5 }) => {
     return (
         <div className="progress-bar">
             {Array.from({ length: totalSteps }).map((_, index) => (

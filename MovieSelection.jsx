@@ -13,7 +13,8 @@ function MovieSelection() {
 
   return (
     <div>
-      <h2>Top 5 Movie Selection</h2>
+      <h2>Select your top 5 movies</h2>
+      <p>Selecting your top 5 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
       {topMovies.map((movie, index) => (
         <input
           key={index}

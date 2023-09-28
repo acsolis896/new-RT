@@ -4,6 +4,7 @@ import ProfileInfo from './ProfileInfo';
 import BirthdaySelection from './BirthdaySelection';
 import GenreSelection from './GenreSelection';
 import MovieSelection from './MovieSelection';
+import TvSelection from './TvSelection';
 import ProgressBar from './ProgressBar';
 
 function App() {
@@ -26,16 +27,17 @@ function App() {
       {step === 2 && <BirthdaySelection />}
       {step === 3 && <GenreSelection />}
       {step === 4 && <MovieSelection />} 
+      {step === 5 && <TvSelection />} 
       
       {/* Navigation buttons */}
     <div style={{ display: 'flex', gap: '10px' }}>
       {step > 1 && (
         <button onClick={prevStep}>Back</button>
       )}
-      {step < 4 && (
+      {step < 5 && (
         <button onClick={nextStep}>Next</button>
       )}
-      {step === 4 && (
+      {step === 5 && (
         <button>Finish</button>
       )}
     </div>
