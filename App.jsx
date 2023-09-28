@@ -19,8 +19,6 @@ function App() {
   return (
     <main className="App">
 
-        <div id="progressBar" class="progress-bar"></div> 
-
       {step === 1 && <ProfileInfo />}
       {step === 2 && <BirthdaySelection />}
       {step === 3 && <GenreSelection />}
