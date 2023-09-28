@@ -258,6 +258,11 @@ textarea {
     text-align: center;
 }
 
+.bday-poster {
+    width: 105px;
+    height: 159px
+}
+
 /* GENRE SELECTION COMPONENT */
 
 .genres-grid {
