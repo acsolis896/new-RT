@@ -35,11 +35,11 @@ function ProfileInfo() {
 
   return (
     <div class="profile-info page-width-small">
-      <div>
+      <div style={{marginTop: '0px'}}>
         <h1>Customize your profile</h1>
         <p>Personalizing your profile will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '30px', marginBottom: '30px'}}>
         <div class="input-div">
                 <div className="profile-picture-container" onClick={() => document.getElementById('fileInput').click()}>
                     {image && <img src={image} alt="profile" />}
