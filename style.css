@@ -20,6 +20,15 @@ menu {
     justify-content: space-between;
 }
 
+.menu-list{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 10px;
+}
+
+/* GENERAL CSS SCHEMES */
+
 .dark-grey-bg {
     background-color: #2D2D2E;
 }
@@ -38,6 +47,8 @@ button {
     color: white;
     margin-top: 10px;
 }
+
+/* NAVIGATION BUTTONS */
 
 .next-button {
     background-color: #FFA724;
