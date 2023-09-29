@@ -8,6 +8,10 @@ body {
     color: white;
 }
 
+.page-width {
+    margin: 50px 25%;
+}
+
 /* NAVIGATION BAR */
 
 nav {
@@ -72,7 +76,7 @@ button {
     padding: 10px 0;
     background-color: transparent; /* optional background color */
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 
 .progress-bar::before {
