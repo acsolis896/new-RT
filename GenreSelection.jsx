@@ -32,8 +32,8 @@ function GenreSelection({ selectedGenres, setSelectedGenres }) {
       <h2>Select your top 3 genres for movies and TV</h2>
       <div className="genres-grid">
             {displayedGenres.map(genre => (
-                <div className="genre-div">
-                 <label key={genre} className={`genre-label ${selectedGenres.includes(genre) ? 'selected' : ''}`}>
+                <div className={`genre-div ${selectedGenres.includes(genre) ? 'selected' : ''}`}>
+                 <label key={genre} className="genre-label">
                     <span className="genre-name">{genre}</span>
                     <input 
                         type="checkbox" 
