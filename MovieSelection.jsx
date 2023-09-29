@@ -37,12 +37,16 @@ function MovieSelection() {
       <h2>Select your top 8 movies</h2>
       <p>Selecting your top 8 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
-      <input
-        type="text"
-        placeholder="Search for a movie..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
+      <div className="search-bar-div">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          className="movie-search-bar"
+          type="text"
+          placeholder="Search"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '16px', marginTop: '16px' }}>
         {moviePosters.map((poster, index) => (
@@ -51,7 +55,7 @@ function MovieSelection() {
           </div>
         ))}
       </div>
-      
+
     </div>
   );
 }

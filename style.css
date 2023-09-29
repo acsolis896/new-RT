@@ -349,3 +349,22 @@ textarea {
     background-color: #FFA724;
     ;
 }
+
+/* MOVIE SELECTION */
+
+.search-bar-div {
+    display: flex;
+    gap: 10px;
+    background-color: #2D2D2E;
+}
+
+.movie-search-bar {
+    width: 100%;
+    height: 56px;
+    padding: 6px, 24px, 6px, 24px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: transparent;
+
+}
