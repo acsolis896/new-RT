@@ -52,7 +52,7 @@ function ProfileInfo() {
                         value={displayName}
                         onChange={handleDisplayNameChange}
                     />
-                    <div style={{display: flex,}}>
+                    <div style={{display: 'flex',}}>
                       <span>📍</span>
                       <input
                         type="text"
