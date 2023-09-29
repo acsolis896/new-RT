@@ -32,7 +32,7 @@ button {
 
 .progress-bar {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     background-color: transparent; /* optional background color */
@@ -49,7 +49,7 @@ button {
     height: 3px; /* adjust the height as needed */
     background-color: #6D6D6D; /* color of the line */
     z-index: 1; /* make sure it's behind the dots */
-    width: calc((100% - 20px) - 5px); /* assuming the dot width is 20px and margin-right is 5px */
+    width: calc(100% - 40px); /* assuming the dot width is 20px and margin-right is 5px */
     transform: translateY(-50%); /* to vertically center the line */
 }
 
@@ -57,7 +57,7 @@ button {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 0px;
     background-color: #6D6D6D;
     position: relative; /* make it on top of the line */
     z-index: 2; /* ensure dot is above the line */
