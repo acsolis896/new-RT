@@ -46,7 +46,7 @@ function GenreSelection({ selectedGenres, setSelectedGenres }) {
             ))}
      </div>
             <button className="show-btn" onClick={() => setShowMore(!showMore)}>
-                {showMore ? 'Show Less' : 'Show More <i class="fa-solid fa-chevron-down"></i>'}
+                {showMore ? <>Show Less <i class="fa-solid fa-chevron-up"></i></> : <>Show More <i className="fa-solid fa-chevron-down"></i></>}
             </button>
     </div>
   );
