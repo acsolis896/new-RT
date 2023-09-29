@@ -37,7 +37,12 @@ function App() {
         <button onClick={prevStep}>Back</button>
       )}
       {step < 5 && (
-        <button onClick={nextStep} disabled={step === 3 && selectedGenres.length !== 3}>Next</button>
+        <button 
+          className="next-button"
+          onClick={nextStep} 
+          disabled={step === 3 && selectedGenres.length !== 3}>
+            Next
+        </button>
       )}
       {step === 5 && (
         <button>Finish</button>

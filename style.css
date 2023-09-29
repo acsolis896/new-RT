@@ -27,6 +27,16 @@ button {
     margin-top: 10px;
 }
 
+.next-button {
+    background-color: #FFA724;
+    color: #222222;
+    cursor: pointer;
+}
+
+.next-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
 
 /* PROGRESS BAR */
 
