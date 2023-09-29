@@ -47,6 +47,7 @@ function ProfileInfo() {
 
                 <div>
                     <input
+                        class="name-input"
                         type="text"
                         placeholder="Display Name"
                         value={displayName}
