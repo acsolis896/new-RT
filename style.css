@@ -80,7 +80,7 @@ button {
     border: 1px solid red;
 }
 
-.progress-bar::before {
+/* .progress-bar::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -91,7 +91,7 @@ button {
     z-index: 1;
     width: calc(100% - 20px);
     transform: translateY(-50%);
-}
+} */
 
 .dot {
     width: 20px;
