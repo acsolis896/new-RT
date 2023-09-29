@@ -28,8 +28,8 @@ function GenreSelection({ selectedGenres, setSelectedGenres }) {
   // Integrate Firebase to save the selected genres
 
   return (
-    <div>
-      <h2 style={{textAlign: 'center'}}>Select your top 3 genres for movies and TV</h2>
+    <div style={{marginTop: '30px'}}>
+      <h2 style={{textAlign: 'center', paddingBottom:'30px'}}>Select your top 3 genres for movies and TV</h2>
       <div className="genres-grid">
             {displayedGenres.map(genre => (
                 <div className={`genre-div ${selectedGenres.includes(genre) ? 'selected' : ''}`}>
