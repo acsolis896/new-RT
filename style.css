@@ -198,6 +198,7 @@ textarea {
 .name-input {
     height: 49px;
     width: 259px;
+    font-size: 36px;
 }
 
 #fileInput {
