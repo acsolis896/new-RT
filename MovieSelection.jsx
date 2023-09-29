@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-require('dotenv').config();
-const API_KEY = process.env.API_KEY;
 
 function MovieSelection() {
   const [topMovies, setTopMovies] = useState(['', '', '', '', '']);
