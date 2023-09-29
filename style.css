@@ -31,6 +31,7 @@ button {
     background-color: #FFA724;
     color: #222222;
     cursor: pointer;
+    border: none;
 }
 
 .next-button:disabled {

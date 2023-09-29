@@ -10,6 +10,9 @@ import ProgressBar from './ProgressBar';
 function App() {
   const [step, setStep] = useState(1); 
   const [selectedGenres, setSelectedGenres] = useState([]);
+  const [month, setMonth] = useState('');
+  const [day, setDay] = useState('');
+  const [year, setYear] = useState('');
 
 
   const nextStep = () => {
@@ -20,13 +23,22 @@ function App() {
     setStep(step - 1); // Move to the previous step
   };
 
+  const isDateValid = () => {
+    if (month.length !== 2 || day.length !== 2 || year.length !== 4) {
+        return false;
+    }
+    const date = new Date(year, month - 1, day);
+    return date && date.getMonth() + 1 === parseInt(month) && date.getDate() === parseInt(day);
+};
+
+
   return (
     <main className="App">
 
         <ProgressBar currentStep={step}/>
 
       {step === 1 && <ProfileInfo />}
-      {step === 2 && <BirthdaySelection />}
+      {step === 2 && <BirthdaySelection month={month} setMonth={setMonth} day={day} setDay={setDay} year={year} setYear={setYear}/>}
       {step === 3 && <GenreSelection selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres}/>}
       {step === 4 && <MovieSelection />} 
       {step === 5 && <TvSelection />} 
@@ -40,7 +52,7 @@ function App() {
         <button 
           className="next-button"
           onClick={nextStep} 
-          disabled={step === 3 && selectedGenres.length !== 3}>
+          disabled={(step === 2 && !isDateValid()) || (step === 3 && selectedGenres.length !== 3)}>
             Next
         </button>
       )}

@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
 
-function BirthdayInput() {
-  const [month, setMonth] = useState('');
-  const [day, setDay] = useState('');
-  const [year, setYear] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const date = new Date(year, month - 1, day);
-    console.log(date);  // Will need to save date on Firebase
-  }
+function BirthdayInput({ month, setMonth, day, setDay, year, setYear }) {
 
   return (
     <form onSubmit={handleSubmit}>
@@ -58,8 +49,6 @@ function BirthdayInput() {
             </div>
         </div>
       
-      
-      {/* <button type="submit">Submit</button> */}
     </form>
   );
 }
