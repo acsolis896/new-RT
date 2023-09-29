@@ -282,11 +282,19 @@ textarea {
   z-index: 10;
 }
 
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;  /* or a specific width, depending on your design */
+}
+
 .edit-icon {
     margin-left: 10px;
     cursor: pointer;
     font-size: 0.9em;
 }
+
 
 /* BIRTHDAY INPUT COMPONENT */
 
