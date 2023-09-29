@@ -2,19 +2,20 @@
   "name": "project",
   "dependencies": {
     "babel-preset-react": "^6.24.1",
+    "firebase": "^10.4.0",
     "html-entities": "2.3.3",
     "nanoid": "4.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "*",
-    "vite": "latest",
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0"
+    "@vitejs/plugin-react": "*",
+    "babel-loader": "^8.1.0",
+    "vite": "latest"
   },
   "scripts": {
     "start": "vite",
@@ -24,7 +25,8 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-env", "@babel/preset-react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   }
 }

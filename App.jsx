@@ -9,6 +9,9 @@ import ProgressBar from './ProgressBar';
 
 function App() {
   const [step, setStep] = useState(1); 
+  const [selectedGenres, setSelectedGenres] = useState([]);
+
+
   const nextStep = () => {
     setStep(step + 1); // Move to the next step
   };
@@ -24,7 +27,7 @@ function App() {
 
       {step === 1 && <ProfileInfo />}
       {step === 2 && <BirthdaySelection />}
-      {step === 3 && <GenreSelection />}
+      {step === 3 && <GenreSelection selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres}/>}
       {step === 4 && <MovieSelection />} 
       {step === 5 && <TvSelection />} 
       
@@ -34,7 +37,7 @@ function App() {
         <button onClick={prevStep}>Back</button>
       )}
       {step < 5 && (
-        <button onClick={nextStep}>Next</button>
+        <button onClick={nextStep} disabled={step === 3 && selectedGenres.length !== 3}>Next</button>
       )}
       {step === 5 && (
         <button>Finish</button>

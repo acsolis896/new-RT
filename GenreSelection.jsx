@@ -10,8 +10,7 @@ const ALL_GENRES = [
     'Talk-Show 🗣', 'Short ⏳'
 ];
 
-function GenreSelection() {
-    const [selectedGenres, setSelectedGenres] = useState([]);
+function GenreSelection({ selectedGenres, setSelectedGenres }) {
     const [showMore, setShowMore] = useState(false);
 
     const handleGenreChange = (genre) => {
@@ -19,6 +18,8 @@ function GenreSelection() {
             setSelectedGenres(prev => prev.filter(g => g !== genre));
         } else if (selectedGenres.length < 3) {
             setSelectedGenres(prev => [...prev, genre]);
+        } else {
+            alert('You can only select up to 3 genres.');
         }
     };
 
@@ -31,9 +32,9 @@ function GenreSelection() {
       <h2>Select your top 3 genres for movies and TV</h2>
       <div className="genres-grid">
             {displayedGenres.map(genre => (
-                <div class="genre-div">
+                <div className="genre-div">
                  <label key={genre} class="genre-label">
-                    <span class="genre-name">{genre}</span>
+                    <span className="genre-name">{genre}</span>
                     <input 
                         type="checkbox" 
                         value={genre} 
