@@ -41,17 +41,17 @@ function ProfileInfo() {
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
         <div class="input-div" style={{marginTop: '30px', marginBottom: '30px'}}>
-                <div className="profile-picture-container" onClick={() => document.getElementById('fileInput').click()}>
-                    {image && <img src={image} alt="profile" />}
-                    <i className="fas fa-plus"></i>
-                    <input 
-                        type="file" 
-                        id="fileInput" 
-                        hidden 
-                        onChange={handleImageChange}
-                    />
-                </div>
-
+        <div className="profile-picture-container" onClick={() => document.getElementById('fileInput').click()}>
+            {image ? <img src={image} alt="profile" /> : null}
+            <i className="fas fa-plus"></i>
+            <input 
+                type="file" 
+                id="fileInput" 
+                hidden 
+                onChange={handleImageChange}
+            />
+        </div>
+        
                 <div>
                     <div className="input-wrapper">
                         <input
