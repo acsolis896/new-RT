@@ -356,10 +356,11 @@ textarea {
     display: flex;
     gap: 10px;
     background-color: #2D2D2E;
+    align-items: center;
 }
 
 .movie-search-bar {
-    width: 100%;
+    width: 50%;
     height: 56px;
     padding: 6px, 24px, 6px, 24px;
     border-radius: 8px;
