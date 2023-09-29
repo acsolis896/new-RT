@@ -34,8 +34,8 @@ function MovieSelection() {
 
   return (
     <div style={{ textAlign: 'center', position: 'relative' }}>
-      <h2>Select your top 8 movies</h2>
-      <p>Selecting your top 8 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
+      <h2>Select your top 3 movies</h2>
+      <p>Selecting your top 3 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
       <div className="search-bar-div">
         <i class="fa-solid fa-magnifying-glass"></i>
