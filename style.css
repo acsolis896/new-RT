@@ -80,7 +80,7 @@ button {
     border: 1px solid red;
 }
 
-/* .progress-bar::before {
+.progress-bar::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -91,16 +91,16 @@ button {
     z-index: 1;
     width: calc(100% - 20px);
     transform: translateY(-50%);
-} */
+}
 
-.dot {
+/* .dot {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #6D6D6D;
     position: relative;
     z-index: 2;
-}
+} */
 
 .dot.completed {
     background-color: #FFA724;
