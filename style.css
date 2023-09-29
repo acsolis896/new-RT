@@ -48,7 +48,8 @@ button {
     padding: 10px 0;
     background-color: transparent; /* optional background color */
     position: relative;
-    width: 50%
+    width: 50%;
+    height: 20px;
 }
 
 .progress-bar::before {
