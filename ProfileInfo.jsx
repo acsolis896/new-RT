@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import EditableInput from './EditableInput';
 import './style.css';
 
 function ProfileInfo() {
   const [displayName, setDisplayName] = useState('');
   const [location, setLocation] = useState('');
   const [image, setImage] = useState(null);
+  const [isEditable, setIsEditable] = useState(false);
+
+    const toggleEdit = () => {
+        setIsEditable(!isEditable);
+    };
 
 
   const handleDisplayNameChange = (e) => {
@@ -64,9 +68,8 @@ function ProfileInfo() {
                         value={location}
                         onChange={handleLocationChange}
                     />
+                    <i class="fa-solid fa-pencil" className="edit-icon" onClick={toggleEdit}></i>
                     </div>
-
-                    <EditableInput/>
                   
                 </div>
         

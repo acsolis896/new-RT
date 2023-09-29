@@ -245,6 +245,14 @@ textarea {
   z-index: 10;
 }
 
+.edit-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 /* BIRTHDAY INPUT COMPONENT */
 
 .input-containers {
