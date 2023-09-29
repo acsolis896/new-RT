@@ -22,6 +22,7 @@ menu {
 
 .menu-list{
     text-decoration: none;
+    list-style-type: none;
     color: black;
     display: flex;
     gap: 10px;
