@@ -283,11 +283,9 @@ textarea {
 }
 
 .edit-icon {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 10px;
     cursor: pointer;
+    font-size: 0.9em;
 }
 
 /* BIRTHDAY INPUT COMPONENT */

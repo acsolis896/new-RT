@@ -7,9 +7,9 @@ function ProfileInfo() {
   const [image, setImage] = useState(null);
   const [isEditable, setIsEditable] = useState(false);
 
-    const toggleEdit = () => {
-        setIsEditable(!isEditable);
-    };
+  function toggleEdit(e) {
+    e.target.previousElementSibling.focus();
+}
 
 
   const handleDisplayNameChange = (e) => {
@@ -53,27 +53,29 @@ function ProfileInfo() {
                 </div>
 
                 <div>
-                    <input
-                        class="name-input"
-                        type="text"
-                        placeholder="Karl.www"
-                        value={displayName}
-                        onChange={handleDisplayNameChange}
-                    />
-                    <div style={{display: 'flex',}}>
+                  <div style={{display: 'flex', alignItems: 'center'}}>
+                      <input
+                          class="name-input"
+                          type="text"
+                          placeholder="Karl.www"
+                          value={displayName}
+                          onChange={handleDisplayNameChange}
+                      />
+                      <i class="fas fa-pencil-alt edit-icon" onClick={toggleEdit}></i>
+                  </div>
+                  <div style={{display: 'flex', alignItems: 'center'}}>
                       <span>📍</span>
                       <input
-                        type="text"
-                        placeholder="Unknown location"
-                        value={location}
-                        onChange={handleLocationChange}
-                    />
-                    <i class="fa-solid fa-pencil" className="edit-icon" onClick={toggleEdit}></i>
-                    </div>
-                  
-                </div>
-        
-        </div>
+                          type="text"
+                          placeholder="Unknown location"
+                          value={location}
+                          onChange={handleLocationChange}
+                      />
+                      <i class="fas fa-pencil-alt edit-icon" onClick={toggleEdit}></i>
+                  </div>
+              </div>
+
+            </div>  
           <textarea 
               class="dark-grey-bg" 
               placeholder="I’m a huge horror movie buff that favors MCU over DC any day. I also love Crime shows and my favorite hero is Spiderman …">
