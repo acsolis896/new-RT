@@ -34,7 +34,7 @@ function ProfileInfo() {
   // Integrate Firebase to save this information later
 
   return (
-    <div class="profile-info page-width">
+    <div class="profile-info page-width-small">
       <div>
         <h1>Customize your profile</h1>
         <p>Personalizing your profile will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>

@@ -10,8 +10,12 @@ body {
     color: white;
 }
 
-.page-width {
+.page-width-small {
     margin: 50px 20%;
+}
+
+.page-width-medium {
+    margin: 50px 10%;
 }
 
 .App {

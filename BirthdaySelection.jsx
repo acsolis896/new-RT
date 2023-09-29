@@ -11,7 +11,7 @@ function BirthdaySelection({ month, setMonth, day, setDay, year, setYear }) {
 };
 
   return (
-    <div className="bday-container">
+    <div className="bday-container page-width-medium">
         <div className="bday-info">
             <h2>Please provide your date of birth 🎂</h2>
             <p>Date of birth will allow us to tailor age-appropriate content and will not be shared with any third parties.</p>
