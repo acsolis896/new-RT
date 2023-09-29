@@ -49,7 +49,6 @@ button {
     background-color: transparent; /* optional background color */
     position: relative;
     width: 50%;
-    height: 20px;
 }
 
 .progress-bar::before {
@@ -63,12 +62,6 @@ button {
     z-index: 1; /* make sure it's behind the dots */
     width: calc(100% - 20px); /* assuming the dot width is 20px and margin-right is 5px */
     transform: translateY(-50%); 
-}
-
-.progress-bar::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .dot {
