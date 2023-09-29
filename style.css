@@ -295,7 +295,7 @@ textarea {
     display: flex;
     gap: 20px;
     justify-content: flex-end;
-    margin-top: 50px
+    margin-top: 60px
 }
 
 .inputs-div {
@@ -336,7 +336,7 @@ textarea {
 
 .bday-movies-div {
     background-color: #2D2D2E;
-    padding: 20px 10px;
+    padding: 20px 20px 30px;
     border-radius: 8px;
     text-align: center;
 }
