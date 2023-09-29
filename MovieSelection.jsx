@@ -1,25 +1,24 @@
 import React, { useState } from 'react';
-import 
+require('dotenv').config();
+const API_KEY = process.env.API_KEY;
 
 function MovieSelection() {
   const [topMovies, setTopMovies] = useState(['', '', '', '', '']);
   const [searchQuery, setSearchQuery] = useState('');
   const [suggestions, setSuggestions] = useState([]);
 
-  // Fetch movie data from TMDb API
-  const fetchMovies = async (query) => {
-    if (!query) return;
+  // Hardcoded movies for demonstration purposes
+  const allMovies = ['The Shawshank Redemption', 'The Godfather', 'Pulp Fiction', 'Inception', 'The Dark Knight', 'Titanic', 'Forrest Gump'];
 
-    const API_KEY = process.env.REACT_APP_API_KEY; // Replace with your API key
-    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`);
-    const data = await response.json();
-
-    return data.results;
+  const handleMovieChange = (e, index) => {
+    const newMovies = [...topMovies];
+    newMovies[index] = e.target.value;
+    setTopMovies(newMovies);
   };
 
-  const handleSearchChange = async (e) => {
+  const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    const searchResults = await fetchMovies(e.target.value);
+    const searchResults = allMovies.filter(movie => movie.toLowerCase().includes(e.target.value.toLowerCase()));
     setSuggestions(searchResults);
   };
 
@@ -27,18 +26,20 @@ function MovieSelection() {
     const firstEmptyIndex = topMovies.indexOf('');
     if (firstEmptyIndex !== -1) {
       const newMovies = [...topMovies];
-      newMovies[firstEmptyIndex] = movie.title; // use the movie title from the API data
+      newMovies[firstEmptyIndex] = movie;
       setTopMovies(newMovies);
       setSearchQuery('');
       setSuggestions([]);
     }
   };
 
+  // Integrate Firebase to save the top 5 movies
+
   return (
     <div style={{ textAlign: 'center' }}>
       <h2>Select your top 5 movies</h2>
       <p>Selecting your top 5 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
-  
+
       <input
         type="text"
         placeholder="Search for a movie..."
@@ -48,13 +49,11 @@ function MovieSelection() {
       <div>
         {suggestions.map((suggestion, index) => (
           <div key={index} onClick={() => addMovieToList(suggestion)}>
-            {suggestion.title}  {/* Display the movie title */}
-            {/* Optional: Display movie poster */}
-            {/* <img src={`https://image.tmdb.org/t/p/w92${suggestion.poster_path}`} alt={suggestion.title} /> */}
+            {suggestion}
           </div>
         ))}
       </div>
-  
+
       {topMovies.map((movie, index) => (
         <input
           key={index}
@@ -66,3 +65,8 @@ function MovieSelection() {
       ))}
     </div>
   );
+}
+
+export default MovieSelection;
+
+
