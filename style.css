@@ -367,6 +367,7 @@ textarea {
     padding: 10px 20px;
     border: none;
     text-transform: lowercase;
+    color: #6D6D6D;
 }
 
 .genre-div {
