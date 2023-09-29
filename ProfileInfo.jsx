@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import EditableInput from './EditableInput';
 import './style.css';
 
 function ProfileInfo() {
@@ -64,6 +65,8 @@ function ProfileInfo() {
                         onChange={handleLocationChange}
                     />
                     </div>
+
+                    <EditableInput/>
                   
                 </div>
         
