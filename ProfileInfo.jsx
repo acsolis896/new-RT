@@ -35,14 +35,14 @@ function ProfileInfo() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
         <div class="input-div">
                 <div className="profile-picture-container" onClick={() => document.getElementById('fileInput').click()}>
-                {image && <img src={image} alt="profile" />}
-                <i className="fas fa-plus"></i>
-                <input 
-                    type="file" 
-                    id="fileInput" 
-                    hidden 
-                    onChange={handleImageChange}
-                />
+                    {image && <img src={image} alt="profile" />}
+                    <i className="fas fa-plus"></i>
+                    <input 
+                        type="file" 
+                        id="fileInput" 
+                        hidden 
+                        onChange={handleImageChange}
+                    />
                 </div>
 
                 <div>
@@ -65,11 +65,11 @@ function ProfileInfo() {
                 </div>
         
         </div>
-        <textarea 
-            class="dark-grey-bg" 
-            placeholder="I’m a huge horror movie buff that favors MCU over DC any day. I also love Crime shows and my favorite hero is Spiderman …">
-        </textarea>
-     </div>
+          <textarea 
+              class="dark-grey-bg" 
+              placeholder="I’m a huge horror movie buff that favors MCU over DC any day. I also love Crime shows and my favorite hero is Spiderman …">
+          </textarea>
+        </div>
 
     </div>
   );
