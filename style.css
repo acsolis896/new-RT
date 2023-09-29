@@ -362,6 +362,7 @@ textarea {
     padding: 6px, 24px, 6px, 24px;
     color: white;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .movie-search-bar {
