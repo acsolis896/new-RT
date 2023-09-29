@@ -114,6 +114,18 @@ button {
     background-color: #FFA724;
 }
 
+.dot.current::before {
+    content: '';
+    width: 12px;       /* Width of the inner circle */
+    height: 12px;      /* Height of the inner circle */
+    background-color: #FFF0B0;  /* Lighter color for the inner circle */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* MAIN COMPONENT */
 
 main {
