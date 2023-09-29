@@ -235,8 +235,8 @@ textarea {
 
 .fas.fa-plus {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: -5px;
+  right: -5px;
   color: black;
   background-color: #fff;
   border-radius: 50%;
