@@ -82,15 +82,17 @@ button {
     align-items: center;
     position: relative;
     width: 90%;
-    height: 30px;  /* Explicit height for the container */
+    height: 30px;
+    border: 1px solid red; 
+
 }
 
 .line {
     content: '';
     position: absolute;
     top: 50%;
-    left: 10px;  /* Offset by half the dot's width */
-    right: 10px; /* Offset by half the dot's width */
+    left: 10px; 
+    right: 10px; 
     height: 3px;
     background-color: #6D6D6D;
     z-index: 1;
