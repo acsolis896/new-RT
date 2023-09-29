@@ -358,13 +358,15 @@ textarea {
     background-color: #2D2D2E;
     align-items: center;
     width: 50%;
+    border-radius: 8px;
+    padding: 6px, 24px, 6px, 24px;
+    color: white;
+    justify-content: center;;
 }
 
 .movie-search-bar {
     width: 100%;
     height: 56px;
-    padding: 6px, 24px, 6px, 24px;
-    border-radius: 8px;
     border: none;
     color: white;
     background-color: transparent;
