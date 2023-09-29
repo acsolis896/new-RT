@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-function BirthdayInput({ month, setMonth, day, setDay, year, setYear }) {
+function BirthdayInput() {
+
+
 
   return (
     <form onSubmit={handleSubmit}>
