@@ -344,3 +344,8 @@ textarea {
 .genre-name {
      margin-right: 10px; /* or any desired spacing between the genre name and checkbox */
 }
+
+.genre-label.selected {
+    background-color: #FFA724;
+    ;
+}

@@ -33,7 +33,7 @@ function GenreSelection({ selectedGenres, setSelectedGenres }) {
       <div className="genres-grid">
             {displayedGenres.map(genre => (
                 <div className="genre-div">
-                 <label key={genre} class="genre-label">
+                 <label key={genre} className={`genre-label ${selectedGenres.includes(genre) ? 'selected' : ''}`}>
                     <span className="genre-name">{genre}</span>
                     <input 
                         type="checkbox" 
@@ -45,7 +45,7 @@ function GenreSelection({ selectedGenres, setSelectedGenres }) {
                 </div>
             ))}
      </div>
-            <button class="show-btn" onClick={() => setShowMore(!showMore)}>
+            <button className="show-btn" onClick={() => setShowMore(!showMore)}>
                 {showMore ? 'Show Less' : 'Show More'}
             </button>
     </div>
