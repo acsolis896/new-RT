@@ -65,6 +65,12 @@ button {
     transform: translateY(-50%); /* to vertically center the line */
 }
 
+.progress-bar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .dot {
     width: 20px;
     height: 20px;
