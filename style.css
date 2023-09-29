@@ -221,7 +221,7 @@ textarea {
   width: 100px;
   height: 100px;
   border-radius: 50%; 
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #ccc;
   background-color: #f5f5f5;
   cursor: pointer;
@@ -235,8 +235,8 @@ textarea {
 
 .fas.fa-plus {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: -5px;
+  right: -5px;
   color: black;
   background-color: #fff;
   border-radius: 50%;
