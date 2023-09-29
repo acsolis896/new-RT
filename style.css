@@ -173,6 +173,7 @@ textarea {
     background-color: transparent;
     display: block;
     border: none;
+    color: white;
 }
 
 .profile-info h1 {
@@ -242,6 +243,7 @@ textarea {
     width: 63px;
     height: 42px;
     text-align: center;
+    color: white;
 }
 
 /* BIRTHDAY SELECTION COMPONENT */
