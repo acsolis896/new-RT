@@ -309,6 +309,8 @@ textarea {
     height: 42px;
     text-align: center;
     color: white;
+    gap: 40px;
+
 }
 
 /* BIRTHDAY SELECTION COMPONENT */
