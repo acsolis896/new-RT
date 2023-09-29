@@ -52,12 +52,16 @@ function ProfileInfo() {
                         value={displayName}
                         onChange={handleDisplayNameChange}
                     />
-                    <input
+                    <div>
+                      <span>📍</span>
+                      <input
                         type="text"
-                        placeholder="📍 Unknown location"
+                        placeholder="Unknown location"
                         value={location}
                         onChange={handleLocationChange}
                     />
+                    </div>
+                  
                 </div>
         
         </div>
