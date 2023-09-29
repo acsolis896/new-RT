@@ -56,7 +56,7 @@ function ProfileInfo() {
                     <input
                         class="name-input"
                         type="text"
-                        placeholder="Display Name"
+                        placeholder="Karl.www"
                         value={displayName}
                         onChange={handleDisplayNameChange}
                     />

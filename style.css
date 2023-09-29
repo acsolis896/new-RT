@@ -8,6 +8,15 @@ body {
     color: white;
 }
 
+/* NAVIGATION BAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+}
+
 .dark-grey-bg {
     background-color: #2D2D2E;
 }
