@@ -295,6 +295,7 @@ textarea {
     display: flex;
     gap: 20px;
     justify-content: flex-end;
+    margin-top: 50px
 }
 
 .inputs-div {
