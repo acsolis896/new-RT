@@ -37,6 +37,7 @@ button {
     padding: 10px 0;
     background-color: transparent; /* optional background color */
     position: relative;
+    width: 100%
 }
 
 .progress-bar::before {
@@ -167,6 +168,7 @@ textarea {
     border-radius: 8px;
     border: 1px solid white;
     margin-top: 10px;
+    color: white;
 }
 
 .profile-info input {
