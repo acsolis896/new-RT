@@ -12,6 +12,11 @@ body {
     margin: 50px 25%;
 }
 
+.App {
+    padding: 20px;  /* Some spacing around the content */
+    box-sizing: border-box;
+}
+
 /* NAVIGATION BAR */
 
 nav {
@@ -70,7 +75,6 @@ button {
 /* PROGRESS BAR */
 
 .progress-bar {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +83,7 @@ button {
     position: relative;
     width: 90%;
     border: 1px solid red;
-    overflow: hidden;
+    box-sizing: border-box; 
 }
 
 .progress-bar::before {
@@ -91,7 +95,7 @@ button {
     height: 3px;
     background-color: #6D6D6D;
     z-index: 1;
-    width: calc(100% - 20px);
+    /* width: calc(100% - 20px); */
     transform: translateY(-50%);
 }
 
