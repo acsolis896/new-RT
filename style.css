@@ -508,7 +508,7 @@ textarea {
 }
 
 /* Define the default look for the checkbox (unchecked state) */
-.genre-label::before {
+.genre-name::before {
     content: "";
     display: inline-block;
     width: 20px; /* Adjust size as needed */
@@ -516,8 +516,11 @@ textarea {
     background: white; 
     border: 1px solid gray;
     vertical-align: middle;
-    margin-right: 5px; /* Adjust spacing as needed */
-    position: relative;
+    margin-left: 5px; /* Adjust spacing as needed */
+    position: absolute;
+    right: -30px; /* Position the checkbox to the right of the genre name */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
 }
 
 /* Define the checked look for the checkbox */
@@ -531,8 +534,9 @@ textarea {
     position: absolute;
     color: gray;
     font-size: 18px; /* Adjust as needed */
-    left: 4px; /* Adjust position as needed */
-    top: -2px; /* Adjust position as needed */
+    right: -27px; /* Adjust position as needed */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
 }
 
 /* MOVIE SELECTION */
