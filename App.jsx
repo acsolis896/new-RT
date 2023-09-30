@@ -55,7 +55,8 @@ function App() {
             className={isProfileEdited ? "next-button edited" : "next-button"}
             onClick={nextStep}
           >
-            {isProfileEdited ? "Next" : "Skip"}
+            {isProfileEdited ? "Next" : "Next"} 
+            {/* "Skip" should be in 2nd spot above but can't get edit working on time */}
           </button>
         ) : (
           step < 5 && (
