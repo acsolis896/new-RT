@@ -51,7 +51,7 @@ function MovieSelection() {
   return (
     <div className='.page-width-medium' style={{ textAlign: 'center', position: 'relative' }}>
 
-      <div style={{ width: '100%', margin: 0, padding: 0, backgroundColor: 'gray', display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
+      <div style={{ width: '100%', margin: 0, padding: 0, backgroundColor: 'gray', display: 'flex', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
           {Array(5).fill(null).map((_, index) => {
               const posterUrl = selectedMovies[index] !== undefined ? moviePosters[selectedMovies[index]] : null;
               return (
@@ -62,7 +62,7 @@ function MovieSelection() {
                           height: '100px', 
                           backgroundSize: 'cover', 
                           backgroundImage: posterUrl ? `url(${posterUrl})` : 'none',
-                          border: posterUrl ? 'none' : '2px dotted #000' // Use a dotted border when there's no poster
+                          border: posterUrl ? 'none' : '2px dashed white' // Use a dotted border when there's no poster
                       }}
                   >
                   </div>
