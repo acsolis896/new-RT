@@ -56,6 +56,10 @@ nav form, nav div {
     margin-left: 20px; /* Optional: Add some spacing to the left */
 }
 
+.fa-magnifying-glass {
+    color: black;
+}
+
 /* GENERAL CSS SCHEMES */
 
 .dark-grey-bg {
