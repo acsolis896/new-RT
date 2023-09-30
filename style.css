@@ -28,7 +28,7 @@ body {
 nav {
     background-color: white;
     color: black;
-    padding: 2px 15%;
+    padding: 2px 10%;
     height: 56px;
 }
 
@@ -77,6 +77,10 @@ menu {
     background-color: transparent;
     border: none;
     color: #6D6D6D;
+}
+
+.sign-login-container {
+    gap: 15px;
 }
 
 /* GENERAL CSS SCHEMES */
