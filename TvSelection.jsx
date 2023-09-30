@@ -65,7 +65,7 @@ function TvSelection() {
 
       <div className="page-width-medium">        
           <h2 style={{marginTop:'30px', marginBottom: '10px', fontSize: '35px'}}>Select your top 5 TV shows</h2>
-          <p style={{marginBottom: '10px', marginRight: '15%', marginLeft: '15%', fontWeight: 'normal', fontSize: '15px'}}>Selecting your top 5 TV-shows will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
+          <p style={{marginBottom: '30px', marginRight: '15%', marginLeft: '15%', fontWeight: 'normal', fontSize: '15px'}}>Selecting your top 5 TV-shows will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
           <div className="search-bar-div" style={{marginBottom: '50px'}}>
             <i class="fa-solid fa-magnifying-glass"></i>
