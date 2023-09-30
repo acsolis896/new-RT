@@ -28,6 +28,8 @@ body {
 nav {
     background-color: white;
     color: black;
+    padding: 2px 15%;
+    height: 56px;
 }
 
 menu {
