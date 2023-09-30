@@ -53,8 +53,9 @@ function TvSelection() {
                                backgroundPosition: 'center', 
                                backgroundImage: posterUrl ? `url(${posterUrl})` : 'none',
                                backgroundRepeat: 'no-repeat',
-                               border: posterUrl ? 'none' : '2px dashed white'
-                          }}
+                               border: posterUrl ? 'none' : '2px dashed white',
+                               boxSizing: 'border-box'
+                              }}
                        >
                        </div>
                    );
