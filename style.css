@@ -493,11 +493,21 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
+    
+.genre-name {
+     margin-right: 10px; /* or any desired spacing between the genre name and checkbox */
+}
+
+.genre-div.selected {
+    background-color: #FFA724;
+    ;
+}
 
 .genre-label input[type="checkbox"] {
     display: none;
 }
 
+/* Define the default look for the checkbox (unchecked state) */
 .genre-label::before {
     content: "";
     display: inline-block;
@@ -510,6 +520,7 @@ textarea {
     position: relative;
 }
 
+/* Define the checked look for the checkbox */
 .genre-label input[type="checkbox"]:checked + .genre-name::before {
     background: white;
     border: 1px solid gray;
@@ -522,15 +533,6 @@ textarea {
     font-size: 18px; /* Adjust as needed */
     left: 4px; /* Adjust position as needed */
     top: -2px; /* Adjust position as needed */
-}
-    
-.genre-name {
-     margin-right: 10px; /* or any desired spacing between the genre name and checkbox */
-}
-
-.genre-div.selected {
-    background-color: #FFA724;
-    ;
 }
 
 /* MOVIE SELECTION */
