@@ -38,7 +38,7 @@ function TvSelection() {
   return (
     <div style={{ textAlign: 'center', position: 'relative' }}>
 
-    <div style={{ width: '100%', marginTop: '30px', padding: '20px', backgroundColor: '#2D2D2E', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
+    <div style={{ width: '100%', marginTop: '50px', padding: '20px', backgroundColor: '#2D2D2E', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
           <p>Your top 5 selections</p>
             <div style={{ display: 'flex', gap: '10px', height: '150px', marginLeft: '10%', marginRight: '10%'}}>
                 {Array(5).fill(null).map((_, index) => {

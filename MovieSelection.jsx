@@ -51,7 +51,7 @@ function MovieSelection() {
   return (
     <div style={{ textAlign: 'center', position: 'relative'}}>
 
-    <div style={{ width: '100%', marginTop: '30px', padding: '20px', backgroundColor: '#2D2D2E', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
+    <div style={{ width: '100%', marginTop: '50px', padding: '20px', backgroundColor: '#2D2D2E', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
         <p>Your top 5 selections</p>
         <div style={{ display: 'flex', gap: '10px', height: '150px', marginLeft: '10%', marginRight: '10%'}}>
             {Array(5).fill(null).map((_, index) => {
@@ -78,8 +78,8 @@ function MovieSelection() {
 
     
       <div className="page-width-medium">
-          <h2 style={{marginTop:'30px', marginBottom: '10px'}}>Select your top 5 movies</h2>
-          <p style={{marginBottom: '10px'}}>Selecting your top 5 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
+          <h2 style={{marginTop:'30px', marginBottom: '10px', fontSize: '35px'}}>Select your top 5 movies</h2>
+          <p style={{marginBottom: '10px', fontWeight: 'normal', fontSize: '20px'}}>Selecting your top 5 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
           <div className="search-bar-div" style={{marginBottom: '20px'}}>
             <i className="fa-solid fa-magnifying-glass" style={{paddingLeft: '10px'}}></i>
