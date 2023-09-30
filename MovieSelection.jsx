@@ -49,10 +49,10 @@ function MovieSelection() {
   };
 
   return (
-    <div style={{ textAlign: 'center', position: 'relative' }}>
-      <p>Your top 5 selections</p>
+    <div style={{ textAlign: 'center', position: 'relative'}}>
 
-      <div style={{ width: '100%', margin: 0, padding: '20px', gap:'10px', backgroundColor: '#2D2D2E', display: 'flex', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
+      <div style={{ width: '100%', margin: 0, padding: '20px', gap:'10px', backgroundColor: '#2D2D2E', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
+        <p>Your top 5 selections</p>
           {Array(5).fill(null).map((_, index) => {
               const posterUrl = selectedMovies[index] !== undefined ? moviePosters[selectedMovies[index]] : null;
               return (
