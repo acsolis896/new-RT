@@ -43,6 +43,7 @@ menu {
     list-style-type: none;
     color: black;
     display: flex;
+    align-items: center;
     gap: 10px;
     margin: 0; /* Ensures no default margins are applied to the ul */
     padding: 0; /* Ensures no default padding is applied to the ul */
@@ -81,6 +82,7 @@ menu {
 
 .sign-login-container {
     gap: 15px;
+    align-items: center;
 }
 
 /* GENERAL CSS SCHEMES */
