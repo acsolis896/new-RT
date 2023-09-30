@@ -50,7 +50,7 @@ menu {
     color: black; 
 }
 
-nav form, nav div {
+.nav-search-container, nav div {
     display: flex;
     align-items: center; /* To vertically align the items */
     margin-left: 20px; /* Optional: Add some spacing to the left */
@@ -62,10 +62,11 @@ nav form, nav div {
     border:none;
     background-color: transparent;
 }
-n
+
 .nav-search-container {
-    background-color: lightgray;
+    background-color: grey;
     border-radius: 8px;
+    gap: 10px;
 }
 
 .nav-search-container input {
