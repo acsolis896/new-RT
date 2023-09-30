@@ -64,6 +64,7 @@ function MovieSelection() {
                             height: '100%', 
                             backgroundSize: 'contain',
                             backgroundPosition: 'center', 
+                            backgroundRepeat: 'no-repeat',
                             backgroundImage: posterUrl ? `url(${posterUrl})` : 'none',
                             border: posterUrl ? 'none' : '2px dashed white'
                         }}
