@@ -63,12 +63,12 @@ nav form, nav div {
     background-color: transparent;
 }
 n
-nav form {
+.nav-search-container {
     background-color: lightgray;
     border-radius: 8px;
 }
 
-form input {
+.nav-search-container input {
     background-color: transparent;
     border: none;
 }
