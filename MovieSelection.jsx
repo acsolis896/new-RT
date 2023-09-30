@@ -96,13 +96,13 @@ function MovieSelection() {
                   width: '20px',
                   height: '20px',
                   borderRadius: '50%',
-                  backgroundColor: 'orange',
+                  backgroundColor: 'white',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'white',
+                  color: 'orange',
                 }}>
-                  <i class="fa-solid fa-circle-check"></i>
+                  <i style={{fontSize: 20px}}class="fa-solid fa-circle-check"></i>
                 </div>
               )}
             </div>
