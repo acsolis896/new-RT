@@ -11,13 +11,18 @@ function ProfileInfo() {
     e.target.previousElementSibling.focus();
 }
 
+const handleInputChange = () => {
+  onEdit();  // This will set isProfileEdited to true in the parent component
+};
 
   const handleDisplayNameChange = (e) => {
     setDisplayName(e.target.value);
+    handleInputChange();
   };
 
   const handleLocationChange = (e) => {
     setLocation(e.target.value);
+    handleInputChange();
   };
 
   const handleImageChange = (e) => {
@@ -29,7 +34,9 @@ function ProfileInfo() {
       };
       reader.readAsDataURL(file);
     }
+    handleInputChange();
   };
+
 
   // Integrate Firebase to save this information later
 
@@ -51,7 +58,7 @@ function ProfileInfo() {
                 onChange={handleImageChange}
             />
         </div>
-        
+
                 <div>
                     <div className="input-wrapper">
                         <input

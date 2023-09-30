@@ -9,6 +9,7 @@ import ProgressBar from './ProgressBar';
 
 function App() {
   const [step, setStep] = useState(1); 
+  const [isProfileEdited, setIsProfileEdited] = useState(false);
   const [selectedGenres, setSelectedGenres] = useState([]);
   const [month, setMonth] = useState('');
   const [day, setDay] = useState('');
@@ -16,11 +17,11 @@ function App() {
 
 
   const nextStep = () => {
-    setStep(step + 1); // Move to the next step
+    setStep(prevStep => prevStep + 1);
   };
 
   const prevStep = () => {
-    setStep(step - 1); // Move to the previous step
+    setStep(prevStep => prevStep - 1);
   };
 
   const isDateValid = () => {
@@ -37,7 +38,7 @@ function App() {
 
         <ProgressBar currentStep={step}/>
 
-      {step === 1 && <ProfileInfo />}
+      {step === 1 && <ProfileInfo onEdit={() => setIsProfileEdited(true)} />}
       {step === 2 && <BirthdaySelection month={month} setMonth={setMonth} day={day} setDay={setDay} year={year} setYear={setYear}/>}
       {step === 3 && <GenreSelection selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres}/>}
       {step === 4 && <MovieSelection />} 
@@ -48,14 +49,23 @@ function App() {
       {step > 1 && (
         <button onClick={prevStep}>Back</button>
       )}
-      {step < 5 && (
-        <button 
-          className="next-button"
-          onClick={nextStep} 
-          disabled={(step === 2 && !isDateValid()) || (step === 3 && selectedGenres.length !== 3)}>
-            Next
-        </button>
-      )}
+      {step === 1 ? (
+          <button 
+            className={isProfileEdited ? "next-button edited" : "next-button"}
+            onClick={nextStep}
+          >
+            {isProfileEdited ? "Next" : "Skip"}
+          </button>
+        ) : (
+          step < 5 && (
+            <button 
+              className="next-button"
+              onClick={nextStep} 
+              disabled={(step === 2 && !isDateValid()) || (step === 3 && selectedGenres.length !== 3)}>
+                Next
+            </button>
+          )
+        )}
       {step === 5 && (
         <button>Finish</button>
       )}
