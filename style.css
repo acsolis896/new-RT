@@ -85,6 +85,19 @@ menu {
     align-items: center;
 }
 
+.login-btn, .signup-btn {
+    display: flex;
+    align-items: center;  /* This will vertically center the content */
+    justify-content: center;  /* This will horizontally center the content */
+    padding: 10px 20px;  /* Example padding, adjust as needed */
+    border: none;  /* Optional, to remove default borders */
+    cursor: pointer;  /* Optional, to indicate an interactive element */
+}
+
+.sign-login-container button {
+    margin-left: 10px;  /* Optional, to add some spacing between the buttons */
+}
+
 /* GENERAL CSS SCHEMES */
 
 .dark-grey-bg {
