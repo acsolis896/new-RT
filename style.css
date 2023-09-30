@@ -57,21 +57,24 @@ menu {
 }
 
 .fa-magnifying-glass {
-    color: black;
+    color: #6D6D6D;
     padding: 0px;
     border:none;
     background-color: transparent;
 }
 
 .nav-search-container {
-    background-color: grey;
+    background-color: #ebebeb;
     border-radius: 8px;
     gap: 10px;
+    width: 351px;
+    height: 34px;
 }
 
 .nav-search-container input {
     background-color: transparent;
     border: none;
+    color: #6D6D6D;
 }
 
 /* GENERAL CSS SCHEMES */
