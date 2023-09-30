@@ -11,21 +11,21 @@ function TvSelection() {
 
   // Hardcoded movie posters for demonstration purposes
   const tvPosters = [
-    'https://m.media-amazon.com/images/M/MV5BMTFlNTQ3MDMyOV5BMl5BanBnXkFtZTgwODk4MzI2MzE@._V1_.jpg', // Breaking Bad
-    'https://m.media-amazon.com/images/M/MV5BZjA0MTM4MTQtZjczZS00YmFkLTg4NWQtOTQzZjIzMGQxODA4XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_.jpg', // Band of Brothers
-    'https://m.media-amazon.com/images/M/MV5BZGZjNWE4ZmItZDNlZC00YTllLWE1ZmYtZmE4ZTM1MjY0NzgyXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg', // Chernobyl
-    'https://m.media-amazon.com/images/M/MV5BMjA5Njk3MjM4OV5BMl5BanBnXkFtZTcwMzkzMTg3OA@@._V1_.jpg', // The Wire
-    'https://m.media-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTYwNzUwMzI3._V1_.jpg', // The Sopranos
-    'https://m.media-amazon.com/images/M/MV5BMjA0ODczMTM2Nl5BMl5BanBnXkFtZTgwODg1MTUwMzI@._V1_.jpg', // Game of Thrones
-    'https://m.media-amazon.com/images/M/MV5BMTY2Njk3MDQ3MV5BMl5BanBnXkFtZTgwMjEzMzgyMjE@._V1_.jpg', // Sherlock
-    'https://m.media-amazon.com/images/M/MV5BMTk2Nzk3MzU4M15BMl5BanBnXkFtZTcwODg0OTY3Mw@@._V1_.jpg', // The Office
-    'https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0Mi00OTg0LWE2ZjItZTg0ZmU4MmU1NTQ1XkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_.jpg', // The Last Dance
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUOnXKnRL0jeo6y4_Nzt0RggJHYbxI_RjJUgCvmdG28BAwpAx', // Breaking Bad
+    'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiZkkqD5_-940YCD6EdEdU1dQKVvg2EuxsGkPL8TKseunhdNsh', // Band of Brothers
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6PHq5OU29Q6UE8DoH6eU1Aj47zBgy_YcrZ8MOUfhJhpYHWTO', // Chernobyl
+    'https://collider.com/wp-content/uploads/the-wire-season-5-poster.jpg', // The Wire
+    'https://m.media-amazon.com/images/M/MV5BNmU3MjkzZWQtOTk1Ni00OTNiLWJhMmMtNmEyN2JjZjUzZDUyXkEyXkFqcGdeQXVyNDIyNjA2MTk@._V1_.jpg', // The Sopranos
+    'https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg', // Game of Thrones
+    'https://m.media-amazon.com/images/M/MV5BMWEzNTFlMTQtMzhjOS00MzQ1LWJjNjgtY2RhMjFhYjQwYjIzXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg', // Sherlock
+    'https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg', // The Office
+    'https://m.media-amazon.com/images/M/MV5BY2U1ZTU4OWItNGU2MC00MTg1LTk4NzUtYTk3ODhjYjI0MzlmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg', // The Last Dance
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0ZlBWHVfpRi2iWRCh_t2f6viHwyKMAfJB3paBHmsL78_b06T',
-    'https://m.media-amazon.com/images/M/MV5BNjQ2NDAxNjg4N15BMl5BanBnXkFtZTgwNzYxNzQ0MjI@._V1_.jpg', // Rick and Morty
+    'https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg', // Rick and Morty
     'https://m.media-amazon.com/images/M/MV5BMTgwMzQzNTQ3OF5BMl5BanBnXkFtZTcwNzUxMzIyMw@@._V1_.jpg', // Planet Earth
     'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6pAadmdlzMN4hW5lHZZfh7dFT4PxwsNDldCec8uZo_yP9va5F',
-    'https://m.media-amazon.com/images/M/MV5BZjZlZDlkYTktZjZjMi00NmE1LThjNzktZTJjZjZiNzY3ODE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg', // Euphoria
-    'https://m.media-amazon.com/images/M/MV5BYjZjODRlYTQtYjAzYS00ZjBlLWIxYzUtMGE3M2M0Zjc5MjVkXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg', // Succession
+    'https://m.media-amazon.com/images/M/MV5BMDMzZDkyNzEtYTY5Ni00NzlhLWI4MzUtY2UzNjNmMjI1YzIzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg', // Euphoria
+    'https://m.media-amazon.com/images/M/MV5BODY5YjA3ZDgtM2EwYy00ZGVmLWFhNWItMTMxMWRkMWFiOTlkXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_QL75_UX190_CR0,2,190,281_.jpg', // Succession
     'https://m.media-amazon.com/images/M/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_.jpg'
 ];
 
@@ -37,6 +37,17 @@ function TvSelection() {
 
   return (
     <div style={{ textAlign: 'center', position: 'relative' }}>
+
+      <div style={{ backgroundColor: 'gray', display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
+        {Array(5).fill(null).map((_, index) => {
+          const posterUrl = selectedTv[index] !== undefined ? tvPosters[selectedTv[index]] : null;
+          return (
+            <div key={index} style={{ flex: 1, height: '100px', backgroundSize: 'cover', backgroundImage: `url(${posterUrl})` }}>
+            </div>
+          );
+        })}
+      </div>
+
       <h2>Select your top 5 TV shows</h2>
       <p>Selecting your top 5 TV-shows will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
