@@ -40,13 +40,15 @@ function TvSelection() {
 
       <div style={{ backgroundColor: '#2D2D2E', padding: '20px', gap:'10px', display: 'flex', flexDirection: 'column',justifyContent: 'space-between', marginBottom: '16px' }}>
         <p>Your top 5 selections</p>
-        {Array(5).fill(null).map((_, index) => {
-          const posterUrl = selectedTv[index] !== undefined ? tvPosters[selectedTv[index]] : null;
-          return (
-            <div key={index} style={{ flex: 1, height: '100%', backgroundSize: 'cover', backgroundImage: `url(${posterUrl})` }}>
-            </div>
-          );
-        })}
+        <div style={{display: 'flex', gap:'10px', height: '180px'}}>
+          {Array(5).fill(null).map((_, index) => {
+            const posterUrl = selectedTv[index] !== undefined ? tvPosters[selectedTv[index]] : null;
+            return (
+              <div key={index} style={{ flex: 1, height: '100%', backgroundSize: 'cover', backgroundImage: `url(${posterUrl})` }}>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <h2>Select your top 5 TV shows</h2>

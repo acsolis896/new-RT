@@ -53,7 +53,7 @@ function MovieSelection() {
 
       <div style={{ width: '100%', margin: 0, padding: '20px', backgroundColor: '#2D2D2E', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
         <p>Your top 5 selections</p>
-        <div style={{display: 'flex', gap:'10px'}}>
+        <div style={{display: 'flex', gap:'10px', height: '180px'}}>
           {Array(5).fill(null).map((_, index) => {
               const posterUrl = selectedMovies[index] !== undefined ? moviePosters[selectedMovies[index]] : null;
               return (
