@@ -45,7 +45,7 @@ function App() {
       {step === 5 && <TvSelection />} 
       
       {/* Navigation buttons */}
-    <div style={{ display: 'flex', gap: '10px' }}>
+    <div style={{ display: 'flex', gap: '30px' }}>
       {step === 1 && <button className="decorative-back">Back</button>}
       {step > 1 && (
         <button onClick={prevStep}>Back</button>
