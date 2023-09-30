@@ -49,7 +49,7 @@ function MovieSelection() {
   };
 
   return (
-    <div className='.page-width-medium' style={{ textAlign: 'center', position: 'relative' }}>
+    <div style={{ textAlign: 'center', position: 'relative' }}>
 
       <div style={{ width: '100%', margin: 0, padding: 0, backgroundColor: 'gray', display: 'flex', justifyContent: 'space-between', marginBottom: '16px', height: '230px' }}>
           {Array(5).fill(null).map((_, index) => {
@@ -69,7 +69,8 @@ function MovieSelection() {
               );
           })}
       </div>
-
+    
+    <div className='.page-width-medium'>
       <h2 style={{marginTop:'30px', marginBottom: '10px'}}>Select your top 5 movies</h2>
       <p style={{marginBottom: '10px'}}>Selecting your top 5 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
@@ -123,6 +124,7 @@ function MovieSelection() {
           {showMore ? 'Show Less' : 'Show More'}
       </button>
 
+      </div>
     </div>
   );
 }
