@@ -33,6 +33,7 @@ nav {
 menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu-list{
@@ -41,6 +42,18 @@ menu {
     color: black;
     display: flex;
     gap: 10px;
+    margin: 0; /* Ensures no default margins are applied to the ul */
+    padding: 0; /* Ensures no default padding is applied to the ul */
+}
+
+.menu-list li a {
+    color: black; 
+}
+
+nav form, nav div {
+    display: flex;
+    align-items: center; /* To vertically align the items */
+    margin-left: 20px; /* Optional: Add some spacing to the left */
 }
 
 /* GENERAL CSS SCHEMES */
