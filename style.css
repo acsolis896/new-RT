@@ -493,6 +493,36 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
+
+.genre-label input[type="checkbox"] {
+    display: none;
+}
+
+.genre-label::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    background: white; 
+    border: 1px solid gray;
+    vertical-align: middle;
+    margin-right: 5px; /* Adjust spacing as needed */
+    position: relative;
+}
+
+.genre-label input[type="checkbox"]:checked + .genre-name::before {
+    background: white;
+    border: 1px solid gray;
+}
+
+.genre-label input[type="checkbox"]:checked + .genre-name::after {
+    content: "✔";
+    position: absolute;
+    color: gray;
+    font-size: 18px; /* Adjust as needed */
+    left: 4px; /* Adjust position as needed */
+    top: -2px; /* Adjust position as needed */
+}
     
 .genre-name {
      margin-right: 10px; /* or any desired spacing between the genre name and checkbox */
