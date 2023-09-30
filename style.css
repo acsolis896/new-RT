@@ -58,6 +58,19 @@ nav form, nav div {
 
 .fa-magnifying-glass {
     color: black;
+    padding: 0px;
+    border:none;
+    background-color: transparent;
+}
+
+nav form {
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
 }
 
 /* GENERAL CSS SCHEMES */
