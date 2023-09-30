@@ -157,8 +157,8 @@ button {
 
 .decorative-back {
     /* Decorative styles for the "Back" button, e.g., faded colors */
-    background-color: #E0E0E0;
-    color: #6D6D6D;
+    background-color: transparent;
+    color: white;
     cursor: default;  /* Makes it clear the button is non-interactive */
 }
 
