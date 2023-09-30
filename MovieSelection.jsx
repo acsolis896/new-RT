@@ -76,11 +76,38 @@ function MovieSelection() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '16px', marginTop: '16px' }}>
-          {moviePosters.slice(0, showMore ? moviePosters.length : 8).map((poster, index) => (
-            <div key={index} onClick={() => handleMovieClick(index)}>
+        {moviePosters.slice(0, showMore ? moviePosters.length : 8).map((poster, index) => {
+          const isSelected = selectedMovies.includes(index);
+          return (
+            <div 
+              key={index} 
+              onClick={() => handleMovieClick(index)}
+              style={{
+                border: isSelected ? '2px solid orange' : 'none',
+                position: 'relative',
+              }}
+            >
               <img src={poster} alt={`Movie ${index + 1}`} style={{ width: '100%' }} />
+              {isSelected && (
+                <div style={{
+                  position: 'absolute',
+                  top: '5%',
+                  right: '5%',
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  backgroundColor: 'orange',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'white',
+                }}>
+                  ✓
+                </div>
+              )}
             </div>
-          ))}
+          );
+        })}
       </div>
 
       <button onClick={() => setShowMore(!showMore)}>
