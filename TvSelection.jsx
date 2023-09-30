@@ -31,7 +31,7 @@ function TvSelection() {
 
   const handleTvClick = (movieIndex) => {
     if (selectedTv.length < 5 && !selectedTv.includes(movieIndex)) {
-      setSelectedTv([...selectedMovies, movieIndex]);
+      setSelectedTv([...selectedTv, movieIndex]);
     }
   };
 
