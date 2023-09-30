@@ -49,8 +49,15 @@ menu {
     padding: 0; /* Ensures no default padding is applied to the ul */
 }
 
+.menu-list li {
+    display: flex;
+    align-items: center;
+}
+
 .menu-list li a {
     color: black; 
+    display: flex;
+    align-items: center;
 }
 
 .nav-search-container, nav div {
