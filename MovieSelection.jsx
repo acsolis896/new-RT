@@ -4,8 +4,9 @@ function MovieSelection() {
   const [topMovies, setTopMovies] = useState(['', '', '', '', '', '', '', '']);
   const [topMoviePosters, setTopMoviePosters] = useState(['', '', '', '', '', '', '', '']);
   const [searchQuery, setSearchQuery] = useState('');
+  const [showMore, setShowMore] = useState(false);
 
-  const allMovies = ['The Shawshank Redemption', 'The Godfather', 'Pulp Fiction', 'Inception', 'The Dark Knight', 'Titanic', 'Forrest Gump'];
+  const allMovies = ['The Shawshank Redemption', 'Inception', 'The Intouchables', 'WALL-E', 'Flipped', 'The Dark Knight', 'Life of Pi', 'The Pianist', 'The Godfather', 'The Godfather Part II', '12 Angry Men', 'Schindlers List', 'Lord of the Rings', 'Pulp Fiction', 'Titanic', 'Forrest Gump'];
 
   // Hardcoded movie posters for demonstration purposes
   const moviePosters = [
@@ -16,7 +17,15 @@ function MovieSelection() {
     'https://m.media-amazon.com/images/M/MV5BMTU2NjQ1Nzc4MF5BMl5BanBnXkFtZTcwNTM0NDk1Mw@@._V1_.jpg',
     'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg',
     'https://m.media-amazon.com/images/M/MV5BNTg2OTY2ODg5OF5BMl5BanBnXkFtZTcwODM5MTYxOA@@._V1_.jpg',
-    'https://m.media-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg'
+    'https://m.media-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg',
+    'https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg', // The Godfather
+    'https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg', // The Godfather Part II
+    'https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg', // 12 Angry Men
+    'https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg', // Schindler's List
+    'https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg', // Lord of the Rings: The Fellowship of the Ring
+    'https://pics.filmaffinity.com/The_Intouchables-113587882-large.jpg', // Pulp Fiction
+    'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg', // Titanic
+    'https://m.media-amazon.com/images/M/MV5BNTg2OTY2ODg5OF5BMl5BanBnXkFtZTcwODM5MTYxOA@@._V1_.jpg', // Forrest Gump
 ];
 
   const addMovieToList = (movie) => {
@@ -33,7 +42,7 @@ function MovieSelection() {
   };
 
   return (
-    <div style={{ textAlign: 'center', position: 'relative' }}>
+    <div className='.page-width-medium' style={{ textAlign: 'center', position: 'relative' }}>
       <h2 style={{marginTop:'30px', marginBottom: '10px'}}>Select your top 5 movies</h2>
       <p style={{marginBottom: '10px'}}>Selecting your top 5 movies will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
@@ -49,12 +58,16 @@ function MovieSelection() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '16px', marginTop: '16px' }}>
-        {moviePosters.map((poster, index) => (
-          <div key={index}>
-            <img src={poster} alt={`Movie ${index + 1}`} style={{ width: '100%' }} />
-          </div>
-        ))}
+          {moviePosters.slice(0, showMore ? moviePosters.length : 8).map((poster, index) => (
+            <div key={index}>
+              <img src={poster} alt={`Movie ${index + 1}`} style={{ width: '100%' }} />
+            </div>
+          ))}
       </div>
+
+      <button onClick={() => setShowMore(!showMore)}>
+          {showMore ? 'Show Less' : 'Show More'}
+      </button>
 
     </div>
   );

@@ -4,6 +4,7 @@ function TvSelection() {
   const [topTv, setTopTv] = useState(['', '', '', '', '', '', '', '']);
   const [topTvPosters, setTopTvPosters] = useState(['', '', '', '', '', '', '', '']);
   const [searchQuery, setSearchQuery] = useState('');
+  const [showMore, setShowMore] = useState(false);
 
   const allTvShows = ['The Shawshank Redemption', 'The Godfather', 'Pulp Fiction', 'Inception', 'The Dark Knight', 'Titanic', 'Forrest Gump'];
 
@@ -49,12 +50,16 @@ function TvSelection() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '16px', marginTop: '16px' }}>
-        {tvPosters.map((poster, index) => (
-          <div key={index}>
-            <img src={poster} alt={`Tv ${index + 1}`} style={{ width: '100%' }} />
-          </div>
-        ))}
+          {tvPosters.slice(0, showMore ? tvPosters.length : 8).map((poster, index) => (
+            <div key={index}>
+              <img src={poster} alt={`TV ${index + 1}`} style={{ width: '100%' }} />
+            </div>
+          ))}
       </div>
+
+      <button onClick={() => setShowMore(!showMore)}>
+          {showMore ? 'Show Less' : 'Show More'}
+      </button>
 
     </div>
   );
