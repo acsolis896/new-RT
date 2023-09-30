@@ -63,59 +63,60 @@ function TvSelection() {
             </div>
       </div>
 
-      <h2>Select your top 5 TV shows</h2>
-      <p>Selecting your top 5 TV-shows will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
+      <div className="page-width-medium">        
+          <h2>Select your top 5 TV shows</h2>
+          <p>Selecting your top 5 TV-shows will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings.</p>
 
-      <div className="search-bar-div">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input
-          className="movie-search-bar"
-          type="text"
-          placeholder="Search"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-      </div>
+          <div className="search-bar-div">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              className="movie-search-bar"
+              type="text"
+              placeholder="Search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '16px', marginTop: '16px' }}>
-      {tvPosters.slice(0, showMore ? tvPosters.length : 8).map((poster, index) => {
-          const isSelected = selectedTv.includes(index);
-          return (
-            <div 
-              key={index} 
-              onClick={() => handleTvClick(index)}
-              style={{
-                border: isSelected ? '2px solid orange' : 'none',
-                position: 'relative',
-              }}
-            >
-              <img src={poster} alt={`Tv ${index + 1}`} style={{ width: '100%' }} />
-              {isSelected && (
-                <div style={{
-                  position: 'absolute',
-                  top: '5%',
-                  right: '5%',
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  backgroundColor: 'white',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'orange',
-                }}>
-                  <i style={{fontSize: '20px'}}class="fa-solid fa-circle-check"></i>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '16px', marginTop: '16px' }}>
+          {tvPosters.slice(0, showMore ? tvPosters.length : 8).map((poster, index) => {
+              const isSelected = selectedTv.includes(index);
+              return (
+                <div 
+                  key={index} 
+                  onClick={() => handleTvClick(index)}
+                  style={{
+                    border: isSelected ? '2px solid orange' : 'none',
+                    position: 'relative',
+                  }}
+                >
+                  <img src={poster} alt={`Tv ${index + 1}`} style={{ width: '100%' }} />
+                  {isSelected && (
+                    <div style={{
+                      position: 'absolute',
+                      top: '5%',
+                      right: '5%',
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      backgroundColor: 'white',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'orange',
+                    }}>
+                      <i style={{fontSize: '20px'}}class="fa-solid fa-circle-check"></i>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          );
-        })}
+              );
+            })}
+          </div>
+
+          <button onClick={() => setShowMore(!showMore)}>
+              {showMore ? 'Show Less' : 'Show More'}
+          </button>
       </div>
-
-      <button onClick={() => setShowMore(!showMore)}>
-          {showMore ? 'Show Less' : 'Show More'}
-      </button>
-
     </div>
   );
 }
