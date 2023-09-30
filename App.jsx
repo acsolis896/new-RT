@@ -46,6 +46,7 @@ function App() {
       
       {/* Navigation buttons */}
     <div style={{ display: 'flex', gap: '10px' }}>
+      {step === 1 && <button className="decorative-back">Back</button>}
       {step > 1 && (
         <button onClick={prevStep}>Back</button>
       )}

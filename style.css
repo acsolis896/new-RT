@@ -78,6 +78,13 @@ button {
     cursor: not-allowed;
 }
 
+.decorative-back {
+    /* Decorative styles for the "Back" button, e.g., faded colors */
+    background-color: #E0E0E0;
+    color: #6D6D6D;
+    cursor: default;  /* Makes it clear the button is non-interactive */
+}
+
 /* PROGRESS BAR */
 
 .progress-bar {
