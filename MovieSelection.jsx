@@ -102,7 +102,7 @@ function MovieSelection() {
                   justifyContent: 'center',
                   color: 'white',
                 }}>
-                  ✓
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               )}
             </div>
