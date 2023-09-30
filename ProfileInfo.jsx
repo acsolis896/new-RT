@@ -64,7 +64,7 @@ const handleInputChange = () => {
                         <input
                             class="name-input"
                             type="text"
-                            placeholder="Karl.www"
+                            placeholder="karl.www"
                             value={displayName}
                             onChange={handleDisplayNameChange}
                         />
